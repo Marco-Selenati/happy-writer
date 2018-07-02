@@ -7,6 +7,8 @@ import ch.mizilovefairy.happy_writer.Session;
 import er.extensions.components.ERXComponent;
 
 public class BaseComponent extends ERXComponent {
+	private static final long serialVersionUID = 410386748963675317L;
+
 	public BaseComponent(WOContext context) {
 		super(context);
 	}
