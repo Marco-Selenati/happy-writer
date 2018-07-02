@@ -1,0 +1,39 @@
+{
+    attributes = (
+        {allowsNull = N; name = id; prototypeName = id; }, 
+        {columnName = name; name = name; prototypeName = shortString; }, 
+        {columnName = preis; name = preis; prototypeName = currencyAmount; }
+    ); 
+    attributesUsedForLocking = (id, name, preis); 
+    className = "ch.mizilovefairy.happy_writer.db.Inhalt"; 
+    classProperties = (artikel, bestellPositionen, name, preis); 
+    externalName = Inhalt; 
+    fetchSpecificationDictionary = {}; 
+    name = Inhalt; 
+    primaryKeyAttributes = (id); 
+    relationships = (
+        {definition = "konfigurations.artikel"; name = artikel; }, 
+        {
+            definition = "bestellteKonfigurations.bestellPosition"; 
+            name = bestellPositionen; 
+        }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = BestellteKonfiguration; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = "inhalt_id"; sourceAttribute = id; }); 
+            name = bestellteKonfigurations; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = Konfiguration; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = "inhalt_id"; sourceAttribute = id; }); 
+            name = konfigurations; 
+            propagatesPrimaryKey = Y; 
+        }
+    ); 
+}

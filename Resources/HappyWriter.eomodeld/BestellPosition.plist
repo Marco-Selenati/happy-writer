@@ -1,0 +1,52 @@
+{
+    attributes = (
+        {
+            allowsNull = N; 
+            columnName = "artikel_id"; 
+            name = "artikel_id"; 
+            prototypeName = id; 
+        }, 
+        {
+            allowsNull = N; 
+            columnName = "bestellung_id"; 
+            name = "bestellung_id"; 
+            prototypeName = id; 
+        }, 
+        {allowsNull = N; name = id; prototypeName = id; }
+    ); 
+    attributesUsedForLocking = ("artikel_id", "bestellung_id", id); 
+    className = "ch.mizilovefairy.happy_writer.db.BestellPosition"; 
+    classProperties = (artikel, bestellung, inhalte); 
+    externalName = BestellPosition; 
+    fetchSpecificationDictionary = {}; 
+    name = BestellPosition; 
+    primaryKeyAttributes = (id); 
+    relationships = (
+        {
+            destination = Artikel; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = "artikel_id"; }); 
+            name = artikel; 
+        }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = BestellteKonfiguration; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = "bestellPos_id"; sourceAttribute = id; }); 
+            name = bestellteKonfigurations; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {
+            destination = Bestellung; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = "bestellung_id"; }); 
+            name = bestellung; 
+        }, 
+        {definition = "bestellteKonfigurations.inhalt"; name = inhalte; }
+    ); 
+}

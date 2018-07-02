@@ -1,0 +1,40 @@
+{
+    EOModelVersion = "2.1"; 
+    adaptorName = JDBC; 
+    connectionDictionary = {
+        URL = "jdbc:mysql://localhost/happywriter?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
+        password = ""; 
+        username = root; 
+    }; 
+    entities = (
+        {className = "ch.mizilovefairy.happy_writer.db.Artikel"; name = Artikel; }, 
+        {
+            className = "ch.mizilovefairy.happy_writer.db.BestellPosition"; 
+            name = BestellPosition; 
+        }, 
+        {className = EOGenericRecord; name = BestellteKonfiguration; }, 
+        {
+            className = "ch.mizilovefairy.happy_writer.db.Bestellung"; 
+            name = Bestellung; 
+        }, 
+        {className = "ch.mizilovefairy.happy_writer.db.Inhalt"; name = Inhalt; }, 
+        {className = EOGenericRecord; name = Konfiguration; }, 
+        {className = "ch.mizilovefairy.happy_writer.db.Kunde"; name = Kunde; }
+    ); 
+    userInfo = {
+        "_EntityModeler" = {
+            activeDatabaseConfigName = Default; 
+            databaseConfigs = {
+                Default = {
+                    adaptorName = JDBC; 
+                    connectionDictionary = {
+                        URL = "jdbc:mysql://localhost/happywriter?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"; 
+                        password = ""; 
+                        username = root; 
+                    }; 
+                    prototypeEntityName = EOJDBCMySQLPrototypes; 
+                }; 
+            }; 
+        }; 
+    }; 
+}

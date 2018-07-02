@@ -1,0 +1,37 @@
+{
+    attributes = (
+        {columnName = bemerkungen; name = bemerkungen; prototypeName = varchar255; }, 
+        {columnName = datum; name = datum; prototypeName = date; }, 
+        {allowsNull = N; name = id; prototypeName = id; }, 
+        {
+            allowsNull = N; 
+            columnName = "kunde_id"; 
+            name = "kunde_id"; 
+            prototypeName = id; 
+        }
+    ); 
+    attributesUsedForLocking = (bemerkungen, datum, id, "kunde_id"); 
+    className = "ch.mizilovefairy.happy_writer.db.Bestellung"; 
+    classProperties = (bemerkungen, bestellPositionen, datum, kunden); 
+    externalName = Bestellung; 
+    fetchSpecificationDictionary = {}; 
+    name = Bestellung; 
+    primaryKeyAttributes = (id); 
+    relationships = (
+        {
+            destination = BestellPosition; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = "bestellung_id"; sourceAttribute = id; }); 
+            name = bestellPositionen; 
+        }, 
+        {
+            destination = Kunde; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = "kunde_id"; }); 
+            name = kunden; 
+        }
+    ); 
+}

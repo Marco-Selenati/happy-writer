@@ -21,5 +21,13 @@ Verbessern Dokumentation
 15:20-15:30
 
 Erstellen des git repos
-19:30-
+19:30-19:35
 
+Erstellen einer korrekt generierten basis  für wonder
+19:35-19:50
+
+EOModel erstellen
+19:50-20:40
+
+datenbank anbindung
+21:04-21:20

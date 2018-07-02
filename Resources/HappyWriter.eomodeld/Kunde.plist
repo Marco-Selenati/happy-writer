@@ -1,0 +1,28 @@
+{
+    attributes = (
+        {allowsNull = N; name = id; prototypeName = id; }, 
+        {columnName = kundeSeit; name = kundeSeit; prototypeName = date; }, 
+        {columnName = nachname; name = nachname; prototypeName = shortString; }, 
+        {columnName = ort; name = ort; prototypeName = shortString; }, 
+        {columnName = plz; name = plz; prototypeName = shortString; }, 
+        {columnName = strasse; name = strasse; prototypeName = shortString; }, 
+        {columnName = tel; name = tel; prototypeName = shortString; }, 
+        {columnName = vorname; name = vorname; prototypeName = shortString; }
+    ); 
+    attributesUsedForLocking = (id, kundeSeit, nachname, ort, plz, strasse, tel, vorname); 
+    className = "ch.mizilovefairy.happy_writer.db.Kunde"; 
+    classProperties = (bestellungen, kundeSeit, nachname, ort, plz, strasse, tel, vorname); 
+    externalName = Kunde; 
+    fetchSpecificationDictionary = {}; 
+    name = Kunde; 
+    primaryKeyAttributes = (id); 
+    relationships = (
+        {
+            destination = Bestellung; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = "kunde_id"; sourceAttribute = id; }); 
+            name = bestellungen; 
+        }
+    ); 
+}
