@@ -31,3 +31,7 @@ EOModel erstellen
 
 datenbank anbindung
 21:04-21:20
+
+Datenbank SQL generieren/Seed daten rauslesen und eintragen
+22:00-22:20
+
