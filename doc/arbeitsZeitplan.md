@@ -35,3 +35,5 @@ datenbank anbindung
 Datenbank SQL generieren/Seed daten rauslesen und eintragen
 22:00-22:20
 
+User seiten erstellen(Ohne funktionalität)
+22:50-23:15
