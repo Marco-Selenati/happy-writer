@@ -16,13 +16,13 @@ public class DirectAction extends ERXDirectAction {
 	public WOActionResults defaultAction() {
 		return pageWithName(Main.class.getName());
 	}
-	
+
 	public Application application() {
-		return (Application)WOApplication.application();
+		return (Application) WOApplication.application();
 	}
-	
+
 	@Override
 	public Session session() {
-		return (Session)super.session();
+		return (Session) super.session();
 	}
 }

@@ -7,10 +7,10 @@ public class Session extends ERXSession {
 
 	public Session() {
 	}
-	
+
 	@Override
 	public Application application() {
-		return (Application)super.application();
+		return (Application) super.application();
 	}
-	
+
 }

@@ -1,0 +1,3 @@
+CheckOut : WOHyperlink {
+	action = checkOut;
+}
