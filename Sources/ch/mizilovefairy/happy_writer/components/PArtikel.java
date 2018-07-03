@@ -2,27 +2,48 @@ package ch.mizilovefairy.happy_writer.components;
 
 import com.webobjects.appserver.WOComponent;
 import com.webobjects.appserver.WOContext;
-import com.webobjects.foundation.NSArray;
+import com.webobjects.foundation.NSMutableArray;
 
 import ch.mizilovefairy.happy_writer.db.Artikel;
 import ch.mizilovefairy.happy_writer.db.Inhalt;
 
+/**
+ * Die produkte seite eines Artikels.
+ * 
+ * Hier kann man sich eine konfiguration von Inhalten zusammenstellen welche mit dem Artikel geliefert werden sollen.
+ * 
+ * @author Marco Selenati
+ *
+ */
 public class PArtikel extends BaseComponent {
 	private static final long serialVersionUID = 3760272183591908893L;
+	/**
+	 * Ist der Artikel auf welcher seite wir uns momentan befinden
+	 */
 	private Artikel artikel;
+	/**
+	 * Der inhalt in der jetzigen iteration
+	 */
 	private Inhalt inhaltLoopVar;
-	private NSArray<Boolean> inhalteSelections;
+	/**
+	 * Die inhalte welche auf der Seite ausgewählt worden sind, sind in diesem array drinn, bei der submit methode
+	 */
+	private NSMutableArray<Inhalt> inhalteSelections;
 
 	public PArtikel(WOContext context) {
 		super(context);
 	}
 
-	public final Artikel getArtikel() {
-		return artikel;
-	}
-
-	public final void setArtikel(Artikel artikel) {
-		this.artikel = artikel;
+	/**
+	 * Wird aufgerufen wenn der user die form will abschicken.
+	 * 
+	 * Wir müssen hier den artikel mit der Inhalt konfiguration die der User will abspeicher in der session.
+	 * 
+	 * @return
+	 */
+	public final WOComponent submit() {
+		// TODO safe in session
+		return null;
 	}
 
 	public final Inhalt getInhaltLoopVar() {
@@ -33,15 +54,20 @@ public class PArtikel extends BaseComponent {
 		this.inhaltLoopVar = inhaltLoopVar;
 	}
 
-	public final NSArray<Boolean> getInhalteSelections() {
+	public final NSMutableArray<Inhalt> getInhalteSelections() {
 		return inhalteSelections;
 	}
 
-	public final void setInhalteSelections(NSArray<Boolean> inhalteSelections) {
+	public final void setInhalteSelections(NSMutableArray<Inhalt> inhalteSelections) {
 		this.inhalteSelections = inhalteSelections;
 	}
-	
-	public final WOComponent submit() {
-		return null;
+
+	public final Artikel getArtikel() {
+		return artikel;
 	}
+
+	public final void setArtikel(Artikel artikel) {
+		this.artikel = artikel;
+	}
+
 }
