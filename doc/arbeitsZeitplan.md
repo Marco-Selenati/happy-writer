@@ -45,4 +45,4 @@ Foreignkeys in SQL script erstellen
 15:25-15:35
 
 Assets einfügen, Image Map
-22:04-
+22:04-22:30

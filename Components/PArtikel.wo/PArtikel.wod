@@ -1,3 +1,21 @@
-bezeichnung : WOString {
+artikelBezeichnung : WOString {
   value = artikel.bezeichnung;
+}
+
+inhalte : WOCheckboxMatrix {
+	list = artikel.inhalte;
+	item = inhaltLoopVar;
+	selections = inhalteSelections;
+}
+
+inhaltBezeichnung : WOString {
+  value = inhaltLoopVar.name;
+}
+
+artikelBestellen : WOForm {
+	multipleSubmit = true;
+}
+
+submit : WOSubmitButton {
+	action = submit;
 }

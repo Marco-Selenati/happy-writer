@@ -15,3 +15,8 @@ INSERT INTO `inhalt` (`id`, `name`, `preis`) VALUES
 (6, 'Radiergummi', '1.5000'),
 (7, 'Spitzer', '5.0000'),
 (8, 'Zirkel', '16.0000');
+
+-- Verbindungen von Artikel und Inhalte
+INSERT INTO `konfiguration` (`artikel_id`, `inhalt_id`) VALUES
+('1', '2'),
+('1', '5')
