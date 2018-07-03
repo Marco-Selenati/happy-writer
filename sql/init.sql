@@ -14,6 +14,8 @@ CREATE TABLE Kunde (id INT NOT NULL, kundeSeit DATE NOT NULL, nachname VARCHAR(5
 
 CREATE TABLE EO_PK_TABLE (NAME CHAR(40) PRIMARY KEY, PK INT);
 
+-- pks
+
 ALTER TABLE Artikel ADD PRIMARY KEY (id);
 
 ALTER TABLE BestellPosition ADD PRIMARY KEY (id);
@@ -27,3 +29,20 @@ ALTER TABLE Inhalt ADD PRIMARY KEY (id);
 ALTER TABLE Konfiguration ADD PRIMARY KEY (artikel_id, inhalt_id);
 
 ALTER TABLE Kunde ADD PRIMARY KEY (id);
+
+-- fks
+
+ALTER TABLE `bestellposition`
+  ADD CONSTRAINT `fk_artikel_id` FOREIGN KEY (`artikel_id`) REFERENCES `artikel` (`id`),
+  ADD CONSTRAINT `fk_bestellung_id` FOREIGN KEY (`bestellung_id`) REFERENCES `bestellung` (`id`);
+
+ALTER TABLE `bestelltekonfiguration`
+  ADD CONSTRAINT `fk_bestellPos_id` FOREIGN KEY (`bestellPos_id`) REFERENCES `bestellposition` (`id`),
+  ADD CONSTRAINT `fk_inhalt_id` FOREIGN KEY (`inhalt_id`) REFERENCES `inhalt` (`id`);
+
+ALTER TABLE `bestellung`
+  ADD CONSTRAINT `fk_kunde_id` FOREIGN KEY (`kunde_id`) REFERENCES `kunde` (`id`);
+
+ALTER TABLE `konfiguration`
+  ADD CONSTRAINT `fk_artikel_id2` FOREIGN KEY (`artikel_id`) REFERENCES `artikel` (`id`),
+  ADD CONSTRAINT `fk_inhalt_id2` FOREIGN KEY (`inhalt_id`) REFERENCES `inhalt` (`id`);
