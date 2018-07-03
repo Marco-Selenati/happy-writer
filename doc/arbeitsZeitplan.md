@@ -38,6 +38,11 @@ Datenbank SQL generieren/Seed daten rauslesen und eintragen
 User seiten erstellen(Ohne funktionalität)
 22:50-23:15
 
+## 3 Juli 2018
+
 Foreignkeys in SQL script erstellen
 14:40-15:00
 15:25-15:35
+
+Assets einfügen, Image Map
+22:04-

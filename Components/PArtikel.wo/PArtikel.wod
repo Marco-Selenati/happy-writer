@@ -1,0 +1,3 @@
+bezeichnung : WOString {
+  value = artikel.bezeichnung;
+}

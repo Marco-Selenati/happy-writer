@@ -1,3 +1,10 @@
 CheckOut : WOHyperlink {
 	action = checkOut;
 }
+
+Menu: WOActiveImage {
+	action = clickOutSide;
+	filename = "assets/Menu.jpg";
+	framework = "app";
+	imageMapFile = "assets/Menu.map"
+}
