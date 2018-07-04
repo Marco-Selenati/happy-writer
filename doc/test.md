@@ -78,6 +78,44 @@ Ich betätige den zurück Knopf
 
 Ich habe keine Artikel im warenkorb
 
+### Admin zurückkehren zu gespeicherten stand
+
+#### Vorraussetzung
+
+Ich habe den Inhalt aaa 12.0000 nicht in der datenbank
+
+#### Ausführen
+
+Ich clicke auf das admin login auf der homepage.
+Ich logge mich mit korrekten daten ein.
+Ich klick auf Neuen inhalt erstellen.
+Ich erstelle den inhalt aaa 12.0000.
+Ich Speichere den erstellten inhalt.
+Ich drücke auf Letzten gespeicherten zustand herstellen.
+
+#### Erfolg
+
+Der soeben erstellte datensatz ist weg
+
+### Admin speichern von Inhalten
+
+#### Vorraussetzung
+
+Ich habe den Inhalt aaa 12.0000 nicht in der datenbank
+
+#### Ausführen
+
+Ich clicke auf das admin login auf der homepage.
+Ich logge mich mit korrekten daten ein.
+Ich klick auf Neuen inhalt erstellen.
+Ich erstelle den inhalt aaa 12.0000.
+Ich Speichere den erstellten inhalt.
+Ich drücke auf Speichern.
+Ich lasse mir den inhalt der tabelle Inhalte ausgaben.
+
+#### Erfolg
+
+der soeben erstellte datensatz ist in der tabelle eingetragen.
 
 
 

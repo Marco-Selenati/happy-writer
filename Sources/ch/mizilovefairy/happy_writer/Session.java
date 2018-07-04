@@ -4,6 +4,7 @@ import com.webobjects.foundation.NSMutableArray;
 
 import ch.mizilovefairy.happy_writer.db.BestellPosition;
 import ch.mizilovefairy.happy_writer.db.Bestellung;
+import ch.mizilovefairy.happy_writer.db.Inhalt;
 import ch.mizilovefairy.happy_writer.db.Kunde;
 import er.extensions.appserver.ERXSession;
 
@@ -13,6 +14,7 @@ public class Session extends ERXSession {
 	private Bestellung bestellung;
 	private NSMutableArray<BestellPosition> warenkorb = new NSMutableArray<>();
 	private String pageTitle;
+	private NSMutableArray<Inhalt> inhalte;
 
 	public Session() {
 		setStoresIDsInURLs(false);
@@ -54,6 +56,14 @@ public class Session extends ERXSession {
 
 	public final void setPageTitle(String pageTitle) {
 		this.pageTitle = pageTitle;
+	}
+
+	public final NSMutableArray<Inhalt> getInhalte() {
+		return inhalte;
+	}
+
+	public final void setInhalte(NSMutableArray<Inhalt> inhalte) {
+		this.inhalte = inhalte;
 	}
 
 }

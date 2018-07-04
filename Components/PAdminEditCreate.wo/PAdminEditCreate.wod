@@ -1,0 +1,21 @@
+
+Name : WOTextField {
+  value = inhalt.name;
+  id = "Name"
+}
+
+Preis : WOTextField {
+  value = inhalt.preis;
+  id = "Preis"
+}
+
+wrapper : BaseLayout {
+}
+
+submit : WOSubmitButton {
+	action = submit;
+}
+
+editCreate : WOForm {
+	multipleSubmit = true;
+}
