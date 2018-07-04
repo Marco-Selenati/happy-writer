@@ -23,6 +23,7 @@ public class PCheckOut extends BaseComponent {
 			kunde = session().getKunde();
 			bestellung = session().getBestellung();
 		}
+		session().setPageTitle("Check Out");
 	}
 
 	public final WOComponent submit() {

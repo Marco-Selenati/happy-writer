@@ -60,3 +60,6 @@ warenkorb implementieren
 
 warenkorb Artikel löschen
 4:40-5:10
+
+Dynamischer title für die Seiten
+5:20-5:40

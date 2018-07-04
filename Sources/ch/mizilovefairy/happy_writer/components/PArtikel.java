@@ -36,6 +36,7 @@ public class PArtikel extends BaseComponent {
 
 	public PArtikel(WOContext context) {
 		super(context);
+		session().setPageTitle("Artikel");
 	}
 
 	/**

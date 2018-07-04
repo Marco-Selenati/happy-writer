@@ -17,6 +17,7 @@ public class PKontrolle extends BaseComponent {
 		super(context);
 		kunde = session().getKunde();
 		bestellung = session().getBestellung();
+		session().setPageTitle("Kontrolle");
 	}
 	
 	public final WOComponent commit() {
