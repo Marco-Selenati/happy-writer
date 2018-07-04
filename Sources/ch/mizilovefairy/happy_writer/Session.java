@@ -14,6 +14,8 @@ public class Session extends ERXSession {
 	private NSMutableArray<BestellPosition> warenkorb = new NSMutableArray<>();
 
 	public Session() {
+		setStoresIDsInURLs(false);
+		setStoresIDsInCookies(true);
 	}
 
 	@Override

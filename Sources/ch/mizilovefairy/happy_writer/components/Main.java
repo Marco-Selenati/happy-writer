@@ -2,6 +2,7 @@ package ch.mizilovefairy.happy_writer.components;
 
 import com.webobjects.appserver.WOComponent;
 import com.webobjects.appserver.WOContext;
+import com.webobjects.foundation.NSMutableArray;
 
 import ch.mizilovefairy.happy_writer.db.Artikel;
 import ch.mizilovefairy.happy_writer.db.BestellPosition;
@@ -40,6 +41,15 @@ public class Main extends BaseComponent {
 		return page;
 	}
 
+	public WOComponent artikelEntfernen() {
+		// entferne artikel
+		System.out.println(wareLoopVar.artikel().bezeichnung());
+		NSMutableArray<BestellPosition> warenkorb = session().getWarenkorb();
+		wareLoopVar.delete();
+		warenkorb.remove(wareLoopVar);
+		return null; 
+	}
+
 	public final BestellPosition getWareLoopVar() {
 		return wareLoopVar;
 	}
@@ -51,9 +61,13 @@ public class Main extends BaseComponent {
 	public final Inhalt getInhaltLoopVar() {
 		return inhaltLoopVar;
 	}
-
+	
 	public final void setInhaltLoopVar(Inhalt inhaltLoopVar) {
 		this.inhaltLoopVar = inhaltLoopVar;
+	}
+	
+	public final boolean isWarenkorbEmpty() {
+		return session().getWarenkorb().size() == 0;
 	}
 	
 }

@@ -57,3 +57,6 @@ base layout erstellen
 
 warenkorb implementieren
 11:00-11:26
+
+warenkorb Artikel löschen
+4:40-5:10

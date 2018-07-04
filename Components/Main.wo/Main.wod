@@ -26,6 +26,15 @@ artikelName : WOString {
 	value = wareLoopVar.artikel.bezeichnung;
 }
 
+artikelEntfernen : WOHyperlink {
+	action = artikelEntfernen;
+}
+
 inhaltName : WOString {
 	value = inhaltLoopVar.name;
+}
+
+nonEmptyWarenkorb : WOConditional {
+  condition = isWarenkorbEmpty;
+  negate = true;
 }
