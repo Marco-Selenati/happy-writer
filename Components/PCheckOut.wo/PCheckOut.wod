@@ -1,0 +1,42 @@
+Nachname : WOTextField {
+  value = kunde.nachname;
+  id = "Nachname"
+}
+
+Vorname : WOTextField {
+  value = kunde.vorname;
+  id = "Vorname"
+}
+
+Strasse : WOTextField {
+  value = kunde.strasse;
+  id = "Strasse"
+}
+
+PLZ : WOTextField {
+  value = kunde.plz;
+  id = "PLZ"
+}
+
+Ort : WOTextField {
+  value = kunde.ort;
+  id = "Ort"
+}
+
+Telefon : WOTextField {
+  value = kunde.tel;
+  id = "Telefon"
+}
+
+Bemerkungen : WOText {
+  value = bestellung.bemerkungen;
+  id = "Bemerkungen"
+}
+
+submit : WOSubmitButton {
+	action = submit;
+}
+
+userDaten : WOForm {
+	multipleSubmit = true;
+}
