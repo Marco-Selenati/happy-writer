@@ -32,6 +32,10 @@ A: Ja, dass UML ist nur ein vorschlag
 
 ## Internet
 
+F: Wie benutze ich Checkbox matrix
+
+A: [Wonder Checkbox Matrix](https://github.com/wocommunity/wonder/blob/4d7f6bf9236c3005359101d6f3c9e6224d47750e/Frameworks/Core/JavaWOExtensions/Sources/com/webobjects/woextensions/WOCheckboxMatrix.java)
+
 ## Herr Bärlocher
 
 F: Wissen Sie wie man CSS einbinden soll
@@ -41,3 +45,9 @@ A: ERXStyleSheet
 F: Wissen Sie wie man JavaScript einbindet
 
 A: ERX JavaScript
+
+## Herr Standhart
+
+F: Wissen Sie wie ich die checkboxen werte in ein Array reinbekomme?
+
+A: Ich habe einfach Checkbox matrix benutzt.
