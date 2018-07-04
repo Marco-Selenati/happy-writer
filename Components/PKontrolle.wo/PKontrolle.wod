@@ -35,3 +35,7 @@ Bemerkungen : WOText {
 
 wrapper : BaseLayout {
 }
+
+commit : WOHyperlink {
+	action = commit;
+}

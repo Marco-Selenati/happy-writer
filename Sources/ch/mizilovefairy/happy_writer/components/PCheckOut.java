@@ -26,6 +26,7 @@ public class PCheckOut extends BaseComponent {
 	}
 
 	public final WOComponent submit() {
+		kunde.setKundeSeit(new NSTimestamp());
 		bestellung.setDatum(new NSTimestamp());
 		// speichere die finalen kunden und bestellungs daten
 		bestellung.setKundenRelationship(kunde);
