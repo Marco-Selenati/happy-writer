@@ -63,3 +63,6 @@ warenkorb Artikel löschen
 
 Dynamischer title für die Seiten
 5:20-5:40
+
+Added Admin login page
+18:05-18:35

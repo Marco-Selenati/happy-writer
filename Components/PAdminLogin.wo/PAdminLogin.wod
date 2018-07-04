@@ -1,0 +1,18 @@
+adminLogin : WOForm {
+	multipleSubmit = true;
+}
+
+login : WOSubmitButton {
+	action = login;
+}
+
+username : WOTextField {
+  value = username;
+}
+
+password : WOPasswordField {
+  value = password;
+}
+
+wrapper : BaseLayout {
+}
