@@ -8,3 +8,33 @@ Menu: WOActiveImage {
 	framework = "app";
 	imageMapFile = "assets/Menu.map"
 }
+
+wrapper : BaseLayout {
+}
+
+artikel : WORepetition {
+	list = session.warenkorb;
+	item = wareLoopVar;
+}
+
+inhalte : WORepetition {
+	list = wareLoopVar.inhalte;
+	item = inhaltLoopVar;
+}
+
+artikelName : WOString {
+	value = wareLoopVar.artikel.bezeichnung;
+}
+
+artikelEntfernen : WOHyperlink {
+	action = artikelEntfernen;
+}
+
+inhaltName : WOString {
+	value = inhaltLoopVar.name;
+}
+
+nonEmptyWarenkorb : WOConditional {
+  condition = isWarenkorbEmpty;
+  negate = true;
+}

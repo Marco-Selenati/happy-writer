@@ -46,3 +46,17 @@ Foreignkeys in SQL script erstellen
 
 Assets einfügen, Image Map
 22:04-22:30
+
+## 4 Juli 2018
+
+checkout/kontroll seiten erstellen
+9:00-10:20
+
+base layout erstellen
+10:30-11:00
+
+warenkorb implementieren
+11:00-11:26
+
+warenkorb Artikel löschen
+4:40-5:10

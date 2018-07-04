@@ -19,3 +19,6 @@ artikelBestellen : WOForm {
 submit : WOSubmitButton {
 	action = submit;
 }
+
+wrapper : BaseLayout {
+}

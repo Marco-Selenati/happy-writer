@@ -1,11 +1,21 @@
-<!doctype html>
-<html>
-	<head>
-		<title>HappyWriter</title>
-	</head>
-	<body>
-		<h1>HappyWriter</h1>
-		<webobject name = "Menu" />
-		<webobject name = "CheckOut">Check Out</webobject>
-	</body>
-</html>
+<webobject name = "wrapper">
+  <h1>HappyWriter</h1>
+  <webobject name = "Menu" />
+  <webobject name = "nonEmptyWarenkorb">
+    <h2>Warenkorb</h2>
+    <ul>
+      <webobject name = "artikel">
+        <li>
+          <webobject name = "artikelName" />
+          <webobject name = "artikelEntfernen">entfernen aus Warenkorb</webobject>
+        </li>
+        <ul>
+          <webobject name = "inhalte">
+            <li><webobject name = "inhaltName" /></li>
+          </webobject>
+        </ul>
+      </webobject>
+    </ul>
+    <webobject name = "CheckOut">Check Out</webobject>
+  </webobject>
+</webobject>

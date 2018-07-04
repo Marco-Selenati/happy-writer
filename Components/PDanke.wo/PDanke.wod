@@ -1,0 +1,8 @@
+
+wrapper : BaseLayout {
+}
+
+hintergrund : WOImage {
+	filename = "assets/logo.jpg";
+	alt="Hintergrundbild"
+}

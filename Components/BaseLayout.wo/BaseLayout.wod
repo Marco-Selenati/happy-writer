@@ -1,0 +1,7 @@
+content : WOComponentContent {
+	
+}
+
+title : WOString {
+  value = "HappyWriter";
+}
