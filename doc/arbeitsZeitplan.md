@@ -59,10 +59,10 @@ warenkorb implementieren
 11:00-11:26
 
 warenkorb Artikel löschen
-4:40-5:10
+16:40-17:10
 
 Dynamischer title für die Seiten
-5:20-5:40
+17:20-17:40
 
 Added Admin login page
 18:05-18:35
