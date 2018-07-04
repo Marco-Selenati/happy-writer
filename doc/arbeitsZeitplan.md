@@ -54,3 +54,6 @@ checkout/kontroll seiten erstellen
 
 base layout erstellen
 10:30-11:00
+
+warenkorb implementieren
+11:00-11:26

@@ -5,12 +5,15 @@ import com.webobjects.appserver.WOContext;
 import com.webobjects.foundation.NSMutableArray;
 
 import ch.mizilovefairy.happy_writer.db.Artikel;
+import ch.mizilovefairy.happy_writer.db.BestellPosition;
 import ch.mizilovefairy.happy_writer.db.Inhalt;
+import er.extensions.eof.ERXEOControlUtilities;
 
 /**
  * Die produkte seite eines Artikels.
  * 
- * Hier kann man sich eine konfiguration von Inhalten zusammenstellen welche mit dem Artikel geliefert werden sollen.
+ * Hier kann man sich eine konfiguration von Inhalten zusammenstellen welche mit
+ * dem Artikel geliefert werden sollen.
  * 
  * @author Marco Selenati
  *
@@ -26,7 +29,8 @@ public class PArtikel extends BaseComponent {
 	 */
 	private Inhalt inhaltLoopVar;
 	/**
-	 * Die inhalte welche auf der Seite ausgewählt worden sind, sind in diesem array drinn, bei der submit methode
+	 * Die inhalte welche auf der Seite ausgewählt worden sind, sind in diesem array
+	 * drinn, bei der submit methode
 	 */
 	private NSMutableArray<Inhalt> inhalteSelections;
 
@@ -37,13 +41,18 @@ public class PArtikel extends BaseComponent {
 	/**
 	 * Wird aufgerufen wenn der user die form will abschicken.
 	 * 
-	 * Wir müssen hier den artikel mit der Inhalt konfiguration die der User will abspeicher in der session.
+	 * Wir müssen hier den artikel mit der Inhalt konfiguration die der User will
+	 * abspeicher in der session.
 	 * 
 	 * @return
 	 */
 	public final WOComponent submit() {
-		// TODO safe in session
-		return null;
+		BestellPosition ware = ERXEOControlUtilities.createAndInsertObject(session().defaultEditingContext(),
+				BestellPosition.class);
+		ware.setArtikel(artikel);
+		inhalteSelections.forEach(i -> ware.addToInhalte(i));
+		session().getWarenkorb().add(ware);
+		return pageWithName(Main.class);
 	}
 
 	public final Inhalt getInhaltLoopVar() {

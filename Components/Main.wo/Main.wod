@@ -11,3 +11,21 @@ Menu: WOActiveImage {
 
 wrapper : BaseLayout {
 }
+
+artikel : WORepetition {
+	list = session.warenkorb;
+	item = wareLoopVar;
+}
+
+inhalte : WORepetition {
+	list = wareLoopVar.inhalte;
+	item = inhaltLoopVar;
+}
+
+artikelName : WOString {
+	value = wareLoopVar.artikel.bezeichnung;
+}
+
+inhaltName : WOString {
+	value = inhaltLoopVar.name;
+}
