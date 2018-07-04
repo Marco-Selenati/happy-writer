@@ -51,3 +51,6 @@ Assets einfügen, Image Map
 
 checkout/kontroll seiten erstellen
 9:00-10:20
+
+base layout erstellen
+10:30-11:00

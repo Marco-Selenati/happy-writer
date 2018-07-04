@@ -32,3 +32,6 @@ Bemerkungen : WOText {
   value = bestellung.bemerkungen;
   id = "Bemerkungen"
 }
+
+wrapper : BaseLayout {
+}

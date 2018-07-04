@@ -40,3 +40,6 @@ submit : WOSubmitButton {
 userDaten : WOForm {
 	multipleSubmit = true;
 }
+
+wrapper : BaseLayout {
+}

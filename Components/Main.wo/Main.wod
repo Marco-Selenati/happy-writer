@@ -8,3 +8,6 @@ Menu: WOActiveImage {
 	framework = "app";
 	imageMapFile = "assets/Menu.map"
 }
+
+wrapper : BaseLayout {
+}
