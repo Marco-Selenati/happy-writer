@@ -66,3 +66,6 @@ Dynamischer title für die Seiten
 
 Added Admin login page
 18:05-18:35
+
+Admin inhalt management seiten
+19:50-
