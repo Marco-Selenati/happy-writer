@@ -4,18 +4,22 @@ import com.webobjects.appserver.WOComponent;
 import com.webobjects.appserver.WOContext;
 import com.webobjects.foundation.NSMutableArray;
 
+import ch.mizilovefairy.happy_writer.db.Artikel;
 import ch.mizilovefairy.happy_writer.db.Inhalt;
 import er.extensions.eof.ERXEOControlUtilities;
 
 public class PAdmin extends BaseComponent {
 	private static final long serialVersionUID = -116767444479334545L;
 	private Inhalt inhaltLoopVar;
+	private Artikel artikelLoopVar;
 
 	public PAdmin(WOContext context) {
 		super(context);
 		session().setPageTitle("Admin");
 		if (session().getInhalte() == null) {
 			session().setInhalte(Inhalt.fetchAllInhalts(session().defaultEditingContext()).mutableClone());
+			session().setArtikel(Artikel.fetchAllArtikels(session().defaultEditingContext()).mutableClone());
+
 		}
 	}
 
@@ -29,7 +33,15 @@ public class PAdmin extends BaseComponent {
 		session().defaultEditingContext().revert();
 		// revert Admin editing state
 		session().setInhalte(Inhalt.fetchAllInhalts(session().defaultEditingContext()).mutableClone());
+		
 		return null;
+	}
+
+	public final WOComponent artikelInhalte() {
+		PAdminArtikel admin = pageWithName(PAdminArtikel.class);
+		admin.setArtikel(artikelLoopVar);
+		
+		return admin;
 	}
 
 	public final WOComponent inhaltNew() {
@@ -63,6 +75,14 @@ public class PAdmin extends BaseComponent {
 
 	public final void setInhaltLoopVar(Inhalt inhaltLoopVar) {
 		this.inhaltLoopVar = inhaltLoopVar;
+	}
+
+	public final Artikel getArtikelLoopVar() {
+		return artikelLoopVar;
+	}
+
+	public final void setArtikelLoopVar(Artikel artikelLoopVar) {
+		this.artikelLoopVar = artikelLoopVar;
 	}
 
 }

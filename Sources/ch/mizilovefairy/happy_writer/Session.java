@@ -2,6 +2,7 @@ package ch.mizilovefairy.happy_writer;
 
 import com.webobjects.foundation.NSMutableArray;
 
+import ch.mizilovefairy.happy_writer.db.Artikel;
 import ch.mizilovefairy.happy_writer.db.BestellPosition;
 import ch.mizilovefairy.happy_writer.db.Bestellung;
 import ch.mizilovefairy.happy_writer.db.Inhalt;
@@ -14,7 +15,14 @@ public class Session extends ERXSession {
 	private Bestellung bestellung;
 	private NSMutableArray<BestellPosition> warenkorb = new NSMutableArray<>();
 	private String pageTitle;
+	/**
+	 * Dieses Array speichert den vom Admin bearbeiteten zustand des Inhalte tables
+	 */
 	private NSMutableArray<Inhalt> inhalte;
+	/**
+	 * Dieses Array speichert den vom Admin bearbeiteten zustand des artikel tables.
+	 */
+	private NSMutableArray<Artikel> artikel;
 
 	public Session() {
 		setStoresIDsInURLs(false);
@@ -64,6 +72,14 @@ public class Session extends ERXSession {
 
 	public final void setInhalte(NSMutableArray<Inhalt> inhalte) {
 		this.inhalte = inhalte;
+	}
+
+	public final NSMutableArray<Artikel> getArtikel() {
+		return artikel;
+	}
+
+	public final void setArtikel(NSMutableArray<Artikel> artikel) {
+		this.artikel = artikel;
 	}
 
 }
