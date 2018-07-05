@@ -27,6 +27,19 @@ inhaltNew : WOHyperlink {
 	action = inhaltNew;
 }
 
+artikel : WORepetition {
+	list = session.artikel;
+	item = artikelLoopVar;
+}
+
+artikelBeszeichnung : WOString {
+	value = artikelLoopVar.bezeichnung;
+}
+
+artikelInhalte : WOHyperlink {
+	action = artikelInhalte;
+}
+
 commit : WOHyperlink {
 	action = commit;
 }

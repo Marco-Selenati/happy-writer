@@ -69,3 +69,8 @@ Added Admin login page
 
 Admin inhalt management seiten
 19:50-20:20 20:55-21:58
+
+# 5 Juli 2018
+
+Administrator Artikel konfiguration
+8:10-8:20 8:40-10:00

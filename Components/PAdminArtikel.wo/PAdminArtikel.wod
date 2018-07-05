@@ -1,0 +1,45 @@
+
+wrapper : BaseLayout {
+}
+
+artikelBezeichnung : WOString {
+	value = artikel.bezeichnung;
+}
+
+inhalte : WORepetition {
+	list = inhalte;
+	item = inhaltLoopVar;
+}
+
+inhalteNichtInArtikel : WORepetition {
+	list = inhalteNichtInArtikel;
+	item = inhaltLoopVar;
+}
+
+inhaltName : WOString {
+	value = inhaltLoopVar.name;
+}
+
+inhaltPreis : WOString {
+	value = inhaltLoopVar.preis;
+}
+
+removeInhaltFromArtikel : WOHyperlink {
+	action = removeInhaltFromArtikel;
+}
+
+addInhaltToArticle : WOHyperlink {
+	action = addInhaltToArticle;
+}
+
+commit : WOHyperlink {
+	action = commit;
+}
+
+abort : WOHyperlink {
+	action = abort;
+}
+
+back : WOHyperlink {
+	action = back;
+}
