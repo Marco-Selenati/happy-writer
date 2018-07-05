@@ -14,7 +14,7 @@ public class PAdminLogin extends BaseComponent {
 	}
 
 	public final WOComponent login() {
-		if (username.equals("admin") && password.equals("klapp42stuhl")) {
+		if ("admin".equals(username) && "klapp42stuhl".equals(password)) {
 			return pageWithName(PAdmin.class);
 		}
 
