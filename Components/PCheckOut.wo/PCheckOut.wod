@@ -4,6 +4,7 @@ Nachname : WOTextField {
   class="form-control";
   required="";
   maxlength="50";
+  data-parsley-pattern="^[a-zA-Z]+$";
 }
 
 Vorname : WOTextField {
@@ -12,6 +13,7 @@ Vorname : WOTextField {
   class="form-control";
   required="";
   maxlength="50";
+  data-parsley-pattern="^[a-zA-Z]+$";
 }
 
 Strasse : WOTextField {
