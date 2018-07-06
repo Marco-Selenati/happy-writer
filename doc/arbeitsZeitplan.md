@@ -115,3 +115,6 @@ Erstellen der Admin login in seite
 
 Erstellen des admin bereiches
 13:30-13:36
+
+Admin Artikel Seite stylen
+13:37-14:00
