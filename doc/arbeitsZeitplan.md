@@ -106,3 +106,6 @@ Erstellen der Artikel seite
 
 Checkout/Kontrolle sites
 12:05-12:17
+
+session terminieren
+12:17-12:20
