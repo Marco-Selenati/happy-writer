@@ -34,10 +34,6 @@ public class Main extends BaseComponent {
 		return(getPageWithArticle("Holzschachtel"));
 	}
 	
-	public WOComponent adminLogin() {
-		return pageWithName(PAdminLogin.class);
-	}
-	
 	private final WOComponent getPageWithArticle(String bezeichnung) {
 		PArtikel page = pageWithName(PArtikel.class);
 		Artikel artikel = Artikel.fetchArtikel(session().defaultEditingContext(), Artikel.BEZEICHNUNG.like(bezeichnung));

@@ -1,5 +1,5 @@
 
-wrapper : BaseLayout {
+wrapper : EmptyLayout {
 	pageTitle = "Danke";
 }
 

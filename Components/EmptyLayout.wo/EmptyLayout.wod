@@ -1,0 +1,18 @@
+content : WOComponentContent {
+}
+
+title : WOString {
+	value = pageTitle;
+}
+
+bootstrapcss : ERXStyleSheet {
+	filename = "css/bootstrap.min.css"
+}
+
+bootstrapjs : ERXJavaScript {
+	filename = "js/bootstrap.min.js"
+}
+
+jquery : ERXJavaScript {
+	filename = "js/jquery-3.3.1.min.js"
+}

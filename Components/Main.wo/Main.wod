@@ -39,7 +39,3 @@ nonEmptyWarenkorb : WOConditional {
   condition = isWarenkorbEmpty;
   negate = true;
 }
-
-adminLogin : WOHyperlink {
-	action = adminLogin;
-}

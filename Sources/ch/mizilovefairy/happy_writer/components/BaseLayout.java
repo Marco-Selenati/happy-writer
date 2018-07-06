@@ -1,5 +1,6 @@
 package ch.mizilovefairy.happy_writer.components;
 
+import com.webobjects.appserver.WOComponent;
 import com.webobjects.appserver.WOContext;
 
 public class BaseLayout extends BaseComponent {
@@ -8,6 +9,14 @@ public class BaseLayout extends BaseComponent {
 
 	public BaseLayout(WOContext context) {
 		super(context);
+	}
+
+	public final WOComponent homepage() {
+		return pageWithName(Main.class);
+	}
+
+	public WOComponent adminLogin() {
+		return pageWithName(PAdminLogin.class);
 	}
 
 	public final String getPageTitle() {

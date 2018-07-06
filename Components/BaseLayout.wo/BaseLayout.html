@@ -1,11 +1,14 @@
-<!DOCTYPE >
-<html lang = "en">
-  <head>
-    <meta charset = "utf-8" />
-    <meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title><webobject name = "title"/></title>
-  </head>
-  <body>
-    <webobject name="content" />
-  </body>
-</html>
+<webobject name = "wrapper">
+  <!-- Logo -->
+  <nav class = "navbar navbar-expand-lg navbar-light bg-light">
+    <webobject name = "homepage"><webobject name = "logo" /></webobject>
+    <div class = "collapse navbar-collapse" id = "navbarSupportedContent">
+      <ul class = "navbar-nav mr-auto">
+        <li class = "nav-item active">
+          <webobject name = "adminLogin">Admin Login</webobject>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <webobject name = "content" />
+</webobject>

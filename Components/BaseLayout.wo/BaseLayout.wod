@@ -1,7 +1,21 @@
 content : WOComponentContent {
-	
 }
 
-title : WOString {
-  value = pageTitle;
+wrapper : EmptyLayout {
+  pageTitle = pageTitle;
+}
+
+homepage : WOHyperlink {
+	action = homepage;
+	class = "navbar-brand"
+}
+
+adminLogin : WOHyperlink {
+	action = adminLogin;
+	class = "nav-link"
+}
+
+logo : WOImage {
+	filename = "assets/logo.jpg";
+	height = "80px";
 }

@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <wodefinitions>
-    <wo class="BaseLayout" wocomponentcontent="false">    
-        
-    <binding name="pageTitle"/>
+    <wo class="EmptyLayout" wocomponentcontent="false">    <binding name="pageTitle"/>
         <validation message="'pageTitle' is a required binding.">
             <unbound name="pageTitle"/>
         </validation>

@@ -94,3 +94,6 @@ Umsetzung des neuen administrations bereiches
 
 Design erstellen
 9:10-9:45
+
+Erstellen basis layouts in bootstrap
+9:45-10:13 10:20-10:30
