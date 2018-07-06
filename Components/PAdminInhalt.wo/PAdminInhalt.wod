@@ -1,5 +1,5 @@
 
-wrapper : BaseLayout {
+wrapper : AdminLayout {
 	pageTitle = "Admin";
 }
 

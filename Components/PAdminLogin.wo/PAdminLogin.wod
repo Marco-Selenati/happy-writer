@@ -25,6 +25,6 @@ password : WOPasswordField {
   data-parsley-required-message="Bitte geben Sie ihr Passwort ein.";
 }
 
-wrapper : BaseLayout {
+wrapper : AdminLayout {
 	pageTitle = "Admin";
 }

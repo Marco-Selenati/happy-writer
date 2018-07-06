@@ -14,7 +14,7 @@ Preis : WOTextField {
   required="";
 }
 
-wrapper : BaseLayout {
+wrapper : AdminLayout {
   pageTitle = "Admin";
 }
 
