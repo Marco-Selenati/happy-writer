@@ -25,6 +25,8 @@
 
 * Die Seiten Stylen (Bootstrap einbinden und benutzen)
 
+* Form validierung
+
 * Seite testen
 
 * projekt dokumentation schreiben
