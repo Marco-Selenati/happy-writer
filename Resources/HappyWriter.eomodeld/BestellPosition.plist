@@ -1,7 +1,7 @@
 {
     attributes = (
         {
-            allowsNull = N; 
+            allowsNull = Y; 
             columnName = "artikel_id"; 
             name = "artikel_id"; 
             prototypeName = id; 
@@ -24,7 +24,6 @@
     relationships = (
         {
             destination = Artikel; 
-            isMandatory = Y; 
             isToMany = N; 
             joinSemantic = EOInnerJoin; 
             joins = ({destinationAttribute = id; sourceAttribute = "artikel_id"; }); 
