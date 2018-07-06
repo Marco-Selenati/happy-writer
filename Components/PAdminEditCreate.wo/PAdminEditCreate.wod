@@ -4,6 +4,7 @@ Name : WOTextField {
   id = "Name";
   class = "form-control";
   required="";
+  maxlength="50";
 }
 
 Preis : WOTextField {
