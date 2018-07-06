@@ -109,3 +109,6 @@ Checkout/Kontrolle sites
 
 session terminieren
 12:17-12:20
+
+Erstellen der Admin login in seite
+12:20-12:27

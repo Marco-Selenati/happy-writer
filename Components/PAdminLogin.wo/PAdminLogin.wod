@@ -4,14 +4,20 @@ adminLogin : WOForm {
 
 login : WOSubmitButton {
 	action = login;
+	class="btn btn-primary";
+	value = "Log In";
 }
 
 username : WOTextField {
   value = username;
+  id = "username";
+  class="form-control";
 }
 
 password : WOPasswordField {
   value = password;
+  id = "password";
+  class="form-control";
 }
 
 wrapper : BaseLayout {
