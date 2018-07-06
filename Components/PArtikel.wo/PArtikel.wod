@@ -22,7 +22,8 @@ wrapper : BaseLayout {
 
 submit : WOSubmitButton {
 	action = submit;
-	class="btn btn-primary m-3";
+	class = "btn btn-primary m-3";
+	value = "Kaufen";
 }
 
 back : WOHyperlink {

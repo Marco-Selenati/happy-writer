@@ -18,4 +18,5 @@ artikelInhalte : WOHyperlink {
 
 Inhalte : WOHyperlink {
 	action = inhalte;
+	class = "btn btn-secondary m-3";
 }

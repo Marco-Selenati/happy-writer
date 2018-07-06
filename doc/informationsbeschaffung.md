@@ -50,6 +50,12 @@ F: Wie kann ich ein design für das aussehen der Webseite erstellen?
 
 A: draw io
 
+F: Können Sie sich meine applikation ansehen und mir sagen ob Sie Probleme sehen?
+
+A:
+    Vorname, Nachnahme sollte nur buchstaben haben
+    Telefon sollte nur nummern und + () haben
+
 ## Herr Standhart
 
 F: Wissen Sie wie ich die checkboxen werte in ein Array reinbekomme?
