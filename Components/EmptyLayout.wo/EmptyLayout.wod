@@ -21,6 +21,10 @@ parsley : ERXJavaScript {
 	filename = "js/parsley.min.js"
 }
 
+parsleyi18n : ERXJavaScript {
+	filename = "js/i18n/de.js"
+}
+
 fontawesome : ERXStyleSheet {
 	filename = "css/all.css";
 }

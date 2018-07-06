@@ -124,3 +124,6 @@ Admin Inhalts Seite stylen
 
 Admin Inhalts Edit/Create Seite stylen
 14:10-14:13
+
+Parsley Validation
+14:13-
