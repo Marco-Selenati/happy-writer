@@ -82,3 +82,6 @@ einrichten/erstellen eines templates für die dokumentation
 
 testen
 7:00-7:15
+
+problem gefunden konzept ändern
+7:15-7:46
