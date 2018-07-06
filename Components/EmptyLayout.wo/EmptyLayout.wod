@@ -6,7 +6,7 @@ title : WOString {
 }
 
 bootstrapcss : ERXStyleSheet {
-	filename = "css/bootstrap.min.css"
+	filename = "css/bootstrap.min.css";
 }
 
 bootstrapjs : ERXJavaScript {
@@ -15,4 +15,8 @@ bootstrapjs : ERXJavaScript {
 
 jquery : ERXJavaScript {
 	filename = "js/jquery-3.3.1.min.js"
+}
+
+fontawesome : ERXStyleSheet {
+	filename = "css/all.css";
 }

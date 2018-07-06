@@ -97,3 +97,6 @@ Design erstellen
 
 Erstellen basis layouts in bootstrap
 9:45-10:13 10:20-10:30
+
+Erstellen der hauptseite mit style
+10:30-11:35

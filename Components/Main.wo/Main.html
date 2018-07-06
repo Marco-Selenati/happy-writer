@@ -1,21 +1,52 @@
 <webobject name = "wrapper">
-  <h1>HappyWriter</h1>
-  <webobject name = "Menu" />
-  <webobject name = "nonEmptyWarenkorb">
-    <h2>Warenkorb</h2>
-    <ul>
-      <webobject name = "artikel">
-        <li>
-          <webobject name = "artikelName" />
-          <webobject name = "artikelEntfernen">entfernen aus Warenkorb</webobject>
-        </li>
-        <ul>
-          <webobject name = "inhalte">
-            <li><webobject name = "inhaltName" /></li>
-          </webobject>
-        </ul>
+  <div class = "row">
+    <div class = "col-sm">
+      <h1>Artikel auswahl</h1>
+      <webobject name = "Menu" />
+    </div>
+    <div class = "col-sm">
+      <webobject name = "nonEmptyWarenkorb">
+        <h2>Warenkorb</h2>
+        <table class = "table">
+          <thead>
+            <tr>
+              <th scope = "col">Artikel</th>
+              <th scope = "col">Inhalte</th>
+              <th scope = "col">Preis</th>
+              <th scope = "col">Aktionen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <webobject name = "artikel">
+              <tr>
+                <td><webobject name = "artikelName" /></td>
+                <td></td>
+                <td><webobject name = "artikelPreis" /></td>
+                <td>
+                  <webobject name = "artikelEntfernen">
+                    <span class = "fas fa-times"></span>
+                  </webobject>
+                </td>
+              </tr>
+              <webobject name = "inhalte">
+                <tr>
+                  <td></td>
+                  <td> <webobject name = "inhaltName" /></td>
+                  <td><webobject name = "inhaltPreis" /></td>
+                  <td> </td>
+                </tr>
+              </webobject>
+            </webobject>
+            <tr>
+              <th>Gesamtpreis</th>
+              <th />
+              <th><webobject name = "gesamtPreis" /></th>
+              <th> </th>
+            </tr>
+          </tbody>
+        </table>
+        <webobject name = "CheckOut">Check Out</webobject>
       </webobject>
-    </ul>
-    <webobject name = "CheckOut">Check Out</webobject>
-  </webobject>
+    </div>
+  </div>
 </webobject>

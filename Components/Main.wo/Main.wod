@@ -1,5 +1,7 @@
 CheckOut : WOHyperlink {
 	action = checkOut;
+	class="btn btn-primary";
+	role="button";
 }
 
 Menu: WOActiveImage {
@@ -27,12 +29,26 @@ artikelName : WOString {
 	value = wareLoopVar.artikel.bezeichnung;
 }
 
+artikelPreis : WOString {
+	value = wareLoopVar.artikel.preis;
+}
+
 artikelEntfernen : WOHyperlink {
 	action = artikelEntfernen;
+	class="btn btn-danger";
+	role="button";
 }
 
 inhaltName : WOString {
 	value = inhaltLoopVar.name;
+}
+
+inhaltPreis : WOString {
+	value = inhaltLoopVar.preis;
+}
+
+gesamtPreis : WOString {
+	value = gesamtPreis;
 }
 
 nonEmptyWarenkorb : WOConditional {
