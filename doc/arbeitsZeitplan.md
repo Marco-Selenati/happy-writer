@@ -103,3 +103,6 @@ Erstellen der hauptseite mit style
 
 Erstellen der Artikel seite
 11:35-12:05
+
+Checkout/Kontrolle sites
+12:05-12:17
