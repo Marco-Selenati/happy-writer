@@ -36,4 +36,5 @@ Daten auf den einzelnen seiten gegeben
 * Project Wonder
 * jQuery
 * Bootstrap
+* Parsley
 
