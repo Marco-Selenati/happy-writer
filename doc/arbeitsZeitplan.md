@@ -112,3 +112,6 @@ session terminieren
 
 Erstellen der Admin login in seite
 12:20-12:27
+
+Erstellen des admin bereiches
+13:30-13:36
