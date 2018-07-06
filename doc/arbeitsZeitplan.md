@@ -88,3 +88,6 @@ problem gefunden konzept ändern
 
 bemerkunen optional machen
 8:10-8:24
+
+Umsetzung des neuen administrations bereiches
+8:41-9:05

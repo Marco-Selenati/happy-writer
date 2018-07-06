@@ -1,5 +1,6 @@
 
 wrapper : BaseLayout {
+	pageTitle = "Admin"
 }
 
 artikelBezeichnung : WOString {

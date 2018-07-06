@@ -14,7 +14,7 @@ public class PAdminEditCreate extends BaseComponent {
 	}
 	
 	public final WOComponent submit() {
-		return pageWithName(PAdmin.class);
+		return pageWithName(PAdminInhalt.class);
 		
 	}
 

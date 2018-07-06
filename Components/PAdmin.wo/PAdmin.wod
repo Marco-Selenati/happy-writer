@@ -3,31 +3,6 @@ wrapper : BaseLayout {
 	pageTitle = "Admin";
 }
 
-inhalte : WORepetition {
-	list = session.inhalte;
-	item = inhaltLoopVar;
-}
-
-inhaltName : WOString {
-	value = inhaltLoopVar.name;
-}
-
-inhaltPreis : WOString {
-	value = inhaltLoopVar.preis;
-}
-
-inhaltDelete : WOHyperlink {
-	action = inhaltDelete;
-}
-
-inhaltEdit : WOHyperlink {
-	action = inhaltEdit;
-}
-
-inhaltNew : WOHyperlink {
-	action = inhaltNew;
-}
-
 artikel : WORepetition {
 	list = session.artikel;
 	item = artikelLoopVar;
@@ -41,10 +16,6 @@ artikelInhalte : WOHyperlink {
 	action = artikelInhalte;
 }
 
-commit : WOHyperlink {
-	action = commit;
-}
-
-abort : WOHyperlink {
-	action = abort;
+Inhalte : WOHyperlink {
+	action = inhalte;
 }

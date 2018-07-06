@@ -1,0 +1,41 @@
+
+wrapper : BaseLayout {
+	pageTitle = "Admin";
+}
+
+inhalte : WORepetition {
+	list = session.inhalte;
+	item = inhaltLoopVar;
+}
+
+inhaltName : WOString {
+	value = inhaltLoopVar.name;
+}
+
+inhaltPreis : WOString {
+	value = inhaltLoopVar.preis;
+}
+
+inhaltDelete : WOHyperlink {
+	action = inhaltDelete;
+}
+
+inhaltEdit : WOHyperlink {
+	action = inhaltEdit;
+}
+
+inhaltNew : WOHyperlink {
+	action = inhaltNew;
+}
+
+commit : WOHyperlink {
+	action = commit;
+}
+
+abort : WOHyperlink {
+	action = abort;
+}
+
+back : WOHyperlink {
+	action = back;
+}
