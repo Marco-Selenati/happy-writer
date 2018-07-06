@@ -85,3 +85,6 @@ testen
 
 problem gefunden konzept ändern
 7:15-7:46
+
+bemerkunen optional machen
+8:10-8:24
