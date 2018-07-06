@@ -7,6 +7,5 @@ public class PDanke extends BaseComponent {
 
 	public PDanke(WOContext context) {
 		super(context);
-		session().setPageTitle("Danke");
 	}
 }

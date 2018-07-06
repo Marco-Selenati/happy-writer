@@ -1,5 +1,6 @@
 
 wrapper : BaseLayout {
+	pageTitle = "Admin";
 }
 
 inhalte : WORepetition {

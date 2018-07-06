@@ -6,10 +6,11 @@ Menu: WOActiveImage {
 	action = clickOutSide;
 	filename = "assets/Menu.jpg";
 	framework = "app";
-	imageMapFile = "assets/Menu.map"
+	imageMapFile = "assets/Menu.map";
 }
 
 wrapper : BaseLayout {
+	pageTitle = "HappyWriter";
 }
 
 artikel : WORepetition {

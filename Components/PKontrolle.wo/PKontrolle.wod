@@ -34,6 +34,7 @@ Bemerkungen : WOText {
 }
 
 wrapper : BaseLayout {
+	pageTitle = "Kontrolle";
 }
 
 commit : WOHyperlink {

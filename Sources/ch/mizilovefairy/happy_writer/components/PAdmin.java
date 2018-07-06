@@ -15,7 +15,6 @@ public class PAdmin extends BaseComponent {
 
 	public PAdmin(WOContext context) {
 		super(context);
-		session().setPageTitle("Admin");
 		if (session().getInhalte() == null) {
 			session().setInhalte(Inhalt.fetchAllInhalts(session().defaultEditingContext()).mutableClone());
 			session().setArtikel(Artikel.fetchAllArtikels(session().defaultEditingContext()).mutableClone());

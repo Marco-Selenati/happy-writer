@@ -42,4 +42,5 @@ userDaten : WOForm {
 }
 
 wrapper : BaseLayout {
+	pageTitle = "Check Out";
 }

@@ -3,5 +3,5 @@ content : WOComponentContent {
 }
 
 title : WOString {
-  value = session.pageTitle;
+  value = pageTitle;
 }

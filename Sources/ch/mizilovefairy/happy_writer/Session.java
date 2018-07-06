@@ -14,7 +14,6 @@ public class Session extends ERXSession {
 	private Kunde kunde = null;
 	private Bestellung bestellung;
 	private NSMutableArray<BestellPosition> warenkorb = new NSMutableArray<>();
-	private String pageTitle;
 	/**
 	 * Dieses Array speichert den vom Admin bearbeiteten zustand des Inhalte tables
 	 */
@@ -56,14 +55,6 @@ public class Session extends ERXSession {
 
 	public final void setWarenkorb(NSMutableArray<BestellPosition> warenkorb) {
 		this.warenkorb = warenkorb;
-	}
-
-	public final String getPageTitle() {
-		return pageTitle;
-	}
-
-	public final void setPageTitle(String pageTitle) {
-		this.pageTitle = pageTitle;
 	}
 
 	public final NSMutableArray<Inhalt> getInhalte() {

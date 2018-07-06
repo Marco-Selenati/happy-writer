@@ -21,4 +21,5 @@ submit : WOSubmitButton {
 }
 
 wrapper : BaseLayout {
+	pageTitle = "Artikel";
 }

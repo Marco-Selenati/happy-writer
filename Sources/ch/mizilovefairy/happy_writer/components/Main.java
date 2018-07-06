@@ -15,7 +15,6 @@ public class Main extends BaseComponent {
 
 	public Main(WOContext context) {
 		super(context);
-		session().setPageTitle("HappyWriter");
 	}
 
 	public WOComponent checkOut() {

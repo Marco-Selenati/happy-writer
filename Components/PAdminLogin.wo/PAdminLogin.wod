@@ -15,4 +15,5 @@ password : WOPasswordField {
 }
 
 wrapper : BaseLayout {
+	pageTitle = "Admin";
 }
