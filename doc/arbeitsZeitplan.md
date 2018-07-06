@@ -118,3 +118,6 @@ Erstellen des admin bereiches
 
 Admin Artikel Seite stylen
 13:37-14:00
+
+Admin Inhalts Seite stylen
+14:00-14:10
