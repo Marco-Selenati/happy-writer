@@ -54,6 +54,10 @@ public class PArtikel extends BaseComponent {
 		session().getWarenkorb().add(ware);
 		return pageWithName(Main.class);
 	}
+	
+	public final WOComponent back() {
+		return pageWithName(Main.class);
+	}
 
 	public final Inhalt getInhaltLoopVar() {
 		return inhaltLoopVar;

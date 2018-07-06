@@ -100,3 +100,6 @@ Erstellen basis layouts in bootstrap
 
 Erstellen der hauptseite mit style
 10:30-11:35
+
+Erstellen der Artikel seite
+11:35-12:05

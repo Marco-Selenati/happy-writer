@@ -16,10 +16,17 @@ artikelBestellen : WOForm {
 	multipleSubmit = true;
 }
 
-submit : WOSubmitButton {
-	action = submit;
-}
-
 wrapper : BaseLayout {
 	pageTitle = "Artikel";
+}
+
+submit : WOSubmitButton {
+	action = submit;
+	class="btn btn-primary";
+}
+
+back : WOHyperlink {
+	action = back;
+	class="btn btn-secondary";
+	role="button";
 }
