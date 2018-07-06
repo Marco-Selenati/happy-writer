@@ -1,12 +1,14 @@
 
 Name : WOTextField {
   value = inhalt.name;
-  id = "Name"
+  id = "Name";
+  class = "form-control";
 }
 
 Preis : WOTextField {
   value = inhalt.preis;
-  id = "Preis"
+  id = "Preis";
+  class = "form-control";
 }
 
 wrapper : BaseLayout {
@@ -15,6 +17,7 @@ wrapper : BaseLayout {
 
 submit : WOSubmitButton {
 	action = submit;
+	class = "btn btn-primary";
 }
 
 editCreate : WOForm {

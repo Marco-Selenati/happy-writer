@@ -121,3 +121,6 @@ Admin Artikel Seite stylen
 
 Admin Inhalts Seite stylen
 14:00-14:10
+
+Admin Inhalts Edit/Create Seite stylen
+14:10-14:13
