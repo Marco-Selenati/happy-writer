@@ -126,4 +126,7 @@ Admin Inhalts Edit/Create Seite stylen
 14:10-14:13
 
 Parsley Validation
-14:13-
+14:13-14:40
+
+Artikel und Inhalte mit icons
+14:40-15:05
