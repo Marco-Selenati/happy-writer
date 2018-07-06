@@ -39,12 +39,12 @@ public class PArtikel extends BaseComponent {
 	}
 
 	/**
-	 * Wird aufgerufen wenn der user die form will abschicken.
+	 * Speichert die Daten aus dem Form für den kauf eines Artikels mit Spezifischen
+	 * Inhaltsartikel.
 	 * 
-	 * Wir müssen hier den artikel mit der Inhalt konfiguration die der User will
-	 * abspeicher in der session.
+	 * Wir müssen hier den Artikel mit den Inhaltsartikeln in der Session speichern.
 	 * 
-	 * @return
+	 * @return Die Hauptseite.
 	 */
 	public final WOComponent submit() {
 		BestellPosition ware = ERXEOControlUtilities.createAndInsertObject(session().defaultEditingContext(),
@@ -54,7 +54,7 @@ public class PArtikel extends BaseComponent {
 		session().getWarenkorb().add(ware);
 		return pageWithName(Main.class);
 	}
-	
+
 	public final WOComponent back() {
 		return pageWithName(Main.class);
 	}
