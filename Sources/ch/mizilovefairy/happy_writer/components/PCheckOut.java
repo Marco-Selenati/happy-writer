@@ -2,7 +2,6 @@ package ch.mizilovefairy.happy_writer.components;
 
 import com.webobjects.appserver.WOComponent;
 import com.webobjects.appserver.WOContext;
-import com.webobjects.foundation.NSTimestamp;
 
 import ch.mizilovefairy.happy_writer.db.Bestellung;
 import ch.mizilovefairy.happy_writer.db.Kunde;
@@ -16,25 +15,25 @@ public class PCheckOut extends BaseComponent {
 	public PCheckOut(WOContext context) {
 		super(context);
 		// check ob wir schon kunden und bestellungs objekte erstellt haben
-		if(session().getKunde() == null) {
-			kunde = ERXEOControlUtilities.createAndInsertObject(session().defaultEditingContext(), Kunde.class);
-			bestellung = ERXEOControlUtilities.createAndInsertObject(session().defaultEditingContext(), Bestellung.class);
-		} else {
-			kunde = session().getKunde();
-			bestellung = session().getBestellung();
-		}
+		kunde = ERXEOControlUtilities.createAndInsertObject(session().defaultEditingContext(), Kunde.class);
+		bestellung = ERXEOControlUtilities.createAndInsertObject(session().defaultEditingContext(), Bestellung.class);
 	}
 
 	public final WOComponent submit() {
-		kunde.setKundeSeit(new NSTimestamp());
-		bestellung.setDatum(new NSTimestamp());
+		PKontrolle kontrolle = pageWithName(PKontrolle.class);
 		// speichere die finalen kunden und bestellungs daten
 		bestellung.setKundenRelationship(kunde);
 		// session kunde/ bestellung setzen
 		// falls der kunde etwas falsch eingegeben hat nehmen wir die aus der session
-		session().setKunde(kunde);
-		session().setBestellung(bestellung);
-		return pageWithName(PKontrolle.class);
+		kontrolle.setKunde(kunde);
+		kontrolle.setBestellung(bestellung);
+		return kontrolle;
+	}
+
+	public final WOComponent back() {
+		kunde.delete();
+		bestellung.delete();
+		return pageWithName(Main.class);
 	}
 
 	public final Kunde getKunde() {

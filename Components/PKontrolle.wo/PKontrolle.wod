@@ -53,3 +53,9 @@ userDaten : WOForm {
 wrapper : BaseLayout {
 	pageTitle = "Kontrolle";
 }
+
+back : WOHyperlink {
+	action = back;
+	class="btn btn-secondary m-3";
+	role="button";
+}
