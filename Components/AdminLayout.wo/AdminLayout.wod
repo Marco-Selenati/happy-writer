@@ -10,11 +10,6 @@ homepage : WOHyperlink {
 	class = "navbar-brand";
 }
 
-adminLogin : WOHyperlink {
-	action = adminLogin;
-	class = "nav-link";
-}
-
 logo : WOImage {
 	filename = "assets/logo.jpg";
 	width="60px";
