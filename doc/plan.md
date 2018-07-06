@@ -19,6 +19,14 @@
 
 * Erstellen der Administrations seite
 
+* Seite testen
+
 --abgabe
 
 * Die Seiten Stylen (Bootstrap einbinden und benutzen)
+
+* Seite testen
+
+* projekt dokumentation schreiben
+
+--abgabe

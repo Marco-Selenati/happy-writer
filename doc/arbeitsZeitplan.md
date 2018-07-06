@@ -74,3 +74,11 @@ Admin inhalt management seiten
 
 Administrator Artikel konfiguration
 8:10-8:20 8:40-10:00
+
+einrichten/erstellen eines templates für die dokumentation
+14:00-18:00 22:00-24:00
+
+# 6 Juli 2018
+
+testen
+7:00-7:15
