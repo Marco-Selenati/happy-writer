@@ -1,4 +1,15 @@
+# WOnder build files
 /bin/
 /build/
+
+# VS Code configuration
 .vscode
+
+# latex artifacts
 tex2pdf*
+*.aux
+*.fls
+*.toc
+*.fdb_latexmk
+*.synctex.gz
+_minted*
