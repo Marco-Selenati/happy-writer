@@ -91,3 +91,6 @@ bemerkunen optional machen
 
 Umsetzung des neuen administrations bereiches
 8:41-9:05
+
+Design erstellen
+9:10-9:45
