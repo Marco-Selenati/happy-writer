@@ -2,36 +2,42 @@ Nachname : WOTextField {
   value = kunde.nachname;
   id = "Nachname";
   class="form-control";
+  required="";
 }
 
 Vorname : WOTextField {
   value = kunde.vorname;
   id = "Vorname";
   class="form-control";
+  required="";
 }
 
 Strasse : WOTextField {
   value = kunde.strasse;
   id = "Strasse";
   class="form-control";
+  required="";
 }
 
 PLZ : WOTextField {
   value = kunde.plz;
   id = "PLZ";
   class="form-control";
+  required="";
 }
 
 Ort : WOTextField {
   value = kunde.ort;
   id = "Ort";
   class="form-control";
+  required="";
 }
 
 Telefon : WOTextField {
   value = kunde.tel;
   id = "Telefon";
   class="form-control";
+  required="";
 }
 
 Bemerkungen : WOText {
@@ -47,6 +53,7 @@ submit : WOSubmitButton {
 
 userDaten : WOForm {
 	multipleSubmit = true;
+	data-parsley-validate = "";
 }
 
 wrapper : BaseLayout {
