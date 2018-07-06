@@ -3,23 +3,26 @@ Name : WOTextField {
   value = inhalt.name;
   id = "Name";
   class = "form-control";
+  required="";
 }
 
 Preis : WOTextField {
   value = inhalt.preis;
   id = "Preis";
   class = "form-control";
+  required="";
 }
 
 wrapper : BaseLayout {
-	pageTitle = "Admin";
+  pageTitle = "Admin";
 }
 
 submit : WOSubmitButton {
-	action = submit;
-	class = "btn btn-primary";
+  action = submit;
+  class = "btn btn-primary";
 }
 
 editCreate : WOForm {
-	multipleSubmit = true;
+  multipleSubmit = true;
+  data-parsley-validate = "";
 }
