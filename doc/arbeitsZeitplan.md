@@ -70,7 +70,7 @@ Added Admin login page
 Admin inhalt management seiten
 19:50-20:20 20:55-21:58
 
-# 5 Juli 2018
+## 5 Juli 2018
 
 Administrator Artikel konfiguration
 8:10-8:20 8:40-10:00
@@ -78,7 +78,7 @@ Administrator Artikel konfiguration
 einrichten/erstellen eines templates für die dokumentation
 14:00-18:00 22:00-24:00
 
-# 6 Juli 2018
+## 6 Juli 2018
 
 testen
 7:00-7:15
@@ -133,3 +133,11 @@ Artikel und Inhalte mit icons
 
 Kleine verbesserungen
 15:05-16:03
+
+Dokumentation Schreiben/ Über dokumentieren lesen
+18:00-00:00
+
+## 7 Juli 2018
+
+Dokumentation Schreiben/ Über dokumentieren lesen
+00:00-
