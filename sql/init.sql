@@ -16,19 +16,26 @@ CREATE TABLE EO_PK_TABLE (NAME CHAR(40) PRIMARY KEY, PK INT);
 
 -- pks
 
-ALTER TABLE Artikel ADD PRIMARY KEY (id);
+ALTER TABLE Artikel
+  ADD PRIMARY KEY (id);
 
-ALTER TABLE BestellPosition ADD PRIMARY KEY (id);
+ALTER TABLE BestellPosition
+  ADD PRIMARY KEY (id);
 
-ALTER TABLE BestellteKonfiguration ADD PRIMARY KEY (bestellPos_id, inhalt_id);
+ALTER TABLE BestellteKonfiguration
+  ADD PRIMARY KEY (bestellPos_id, inhalt_id);
 
-ALTER TABLE Bestellung ADD PRIMARY KEY (id);
+ALTER TABLE Bestellung
+  ADD PRIMARY KEY (id);
 
-ALTER TABLE Inhalt ADD PRIMARY KEY (id);
+ALTER TABLE Inhalt
+  ADD PRIMARY KEY (id);
 
-ALTER TABLE Konfiguration ADD PRIMARY KEY (artikel_id, inhalt_id);
+ALTER TABLE Konfiguration
+  ADD PRIMARY KEY (artikel_id, inhalt_id);
 
-ALTER TABLE Kunde ADD PRIMARY KEY (id);
+ALTER TABLE Kunde
+  ADD PRIMARY KEY (id);
 
 -- fks
 
