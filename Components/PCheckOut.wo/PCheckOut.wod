@@ -1,45 +1,76 @@
 Nachname : WOTextField {
   value = kunde.nachname;
-  id = "Nachname"
+  id = "Nachname";
+  class="form-control";
+  required="";
+  maxlength="50";
+  data-parsley-pattern="^[a-zA-Z]+$";
 }
 
 Vorname : WOTextField {
   value = kunde.vorname;
-  id = "Vorname"
+  id = "Vorname";
+  class="form-control";
+  required="";
+  maxlength="50";
+  data-parsley-pattern="^[a-zA-Z]+$";
 }
 
 Strasse : WOTextField {
   value = kunde.strasse;
-  id = "Strasse"
+  id = "Strasse";
+  class="form-control";
+  required="";
+  maxlength="50";
 }
 
 PLZ : WOTextField {
   value = kunde.plz;
-  id = "PLZ"
+  id = "PLZ";
+  class="form-control";
+  required="";
+  maxlength="50";
 }
 
 Ort : WOTextField {
   value = kunde.ort;
-  id = "Ort"
+  id = "Ort";
+  class="form-control";
+  required="";
+  maxlength="50";
 }
 
 Telefon : WOTextField {
   value = kunde.tel;
-  id = "Telefon"
+  id = "Telefon";
+  class="form-control";
+  required="";
+  maxlength="50";
 }
 
 Bemerkungen : WOText {
   value = bestellung.bemerkungen;
-  id = "Bemerkungen"
+  id = "Bemerkungen";
+  class="form-control";
+  maxlength="255";
 }
 
 submit : WOSubmitButton {
 	action = submit;
+	class="btn btn-primary";
 }
 
 userDaten : WOForm {
 	multipleSubmit = true;
+	data-parsley-validate = "";
 }
 
 wrapper : BaseLayout {
+	pageTitle = "Check Out";
+}
+
+back : WOHyperlink {
+	action = back;
+	class="btn btn-secondary m-3";
+	role="button";
 }

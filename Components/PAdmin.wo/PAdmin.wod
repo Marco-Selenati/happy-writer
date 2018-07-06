@@ -1,30 +1,6 @@
 
-wrapper : BaseLayout {
-}
-
-inhalte : WORepetition {
-	list = session.inhalte;
-	item = inhaltLoopVar;
-}
-
-inhaltName : WOString {
-	value = inhaltLoopVar.name;
-}
-
-inhaltPreis : WOString {
-	value = inhaltLoopVar.preis;
-}
-
-inhaltDelete : WOHyperlink {
-	action = inhaltDelete;
-}
-
-inhaltEdit : WOHyperlink {
-	action = inhaltEdit;
-}
-
-inhaltNew : WOHyperlink {
-	action = inhaltNew;
+wrapper : AdminLayout {
+	pageTitle = "Admin";
 }
 
 artikel : WORepetition {
@@ -40,10 +16,7 @@ artikelInhalte : WOHyperlink {
 	action = artikelInhalte;
 }
 
-commit : WOHyperlink {
-	action = commit;
-}
-
-abort : WOHyperlink {
-	action = abort;
+Inhalte : WOHyperlink {
+	action = inhalte;
+	class = "btn btn-secondary m-3";
 }

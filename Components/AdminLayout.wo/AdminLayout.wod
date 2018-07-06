@@ -1,0 +1,17 @@
+content : WOComponentContent {
+}
+
+wrapper : EmptyLayout {
+  pageTitle = pageTitle;
+}
+
+homepage : WOHyperlink {
+	action = homepage;
+	class = "navbar-brand";
+}
+
+logo : WOImage {
+	filename = "assets/logo.jpg";
+	width="60px";
+	height="auto";
+}

@@ -1,18 +1,30 @@
 adminLogin : WOForm {
 	multipleSubmit = true;
+	data-parsley-validate = "";
 }
 
 login : WOSubmitButton {
 	action = login;
+	class="btn btn-primary";
+	value = "Log In";
 }
 
 username : WOTextField {
   value = username;
+  id = "username";
+  class="form-control";
+  required="";
+  data-parsley-required-message="Bitte geben Sie ihren Usernamen ein.";
 }
 
 password : WOPasswordField {
   value = password;
+  id = "password";
+  class="form-control";
+  required="";
+  data-parsley-required-message="Bitte geben Sie ihr Passwort ein.";
 }
 
-wrapper : BaseLayout {
+wrapper : AdminLayout {
+	pageTitle = "Admin";
 }

@@ -1,8 +1,10 @@
 
-wrapper : BaseLayout {
+wrapper : EmptyLayout {
+	pageTitle = "Danke";
 }
 
 hintergrund : WOImage {
 	filename = "assets/logo.jpg";
-	alt="Hintergrundbild"
+	alt="Hintergrundbild";
+	style="position: fixed; width: 100%; height: 100%; left: 0; top: 0; background-size: cover; z-index: -1;"
 }

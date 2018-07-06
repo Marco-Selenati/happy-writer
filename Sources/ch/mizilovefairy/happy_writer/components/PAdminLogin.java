@@ -10,7 +10,6 @@ public class PAdminLogin extends BaseComponent {
 
 	public PAdminLogin(WOContext context) {
 		super(context);
-		session().setPageTitle("Admin");
 	}
 
 	public final WOComponent login() {

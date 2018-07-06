@@ -117,19 +117,22 @@ Ich lasse mir den inhalt der tabelle Inhalte ausgaben.
 
 der soeben erstellte datensatz ist in der tabelle eingetragen.
 
+### Kundendaten kontrolle zurück und abschicken
 
+#### Vorraussetzung
 
+#### Ausführen
 
+Ich wähle holzschachtel.
+Ich drücke kaufen.
+Ich drücke Check Out.
+Ich gebe a a a a a a ein.
+Ich drücke Submit.
+Ich drücke zurück.
+Ich gebe a a a a a a ein.
+Ich drücke Submit.
+Ich drücke Bestätigen.
 
+#### Erfolg
 
-
-
-
-
-
-
-
-
-
-
-
+der soeben erstellte datensatz ist in der tabelle eingetragen.

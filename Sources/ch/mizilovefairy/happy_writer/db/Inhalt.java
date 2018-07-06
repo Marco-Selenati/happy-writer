@@ -8,4 +8,8 @@ public class Inhalt extends _Inhalt {
 
 	@SuppressWarnings("unused")
 	private static final Logger log = LoggerFactory.getLogger(Inhalt.class);
+
+	public final String icon() {
+		return "assets/inhalt/" + name() + ".jpg";
+	}
 }

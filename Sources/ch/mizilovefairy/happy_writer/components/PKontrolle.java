@@ -3,6 +3,7 @@ package ch.mizilovefairy.happy_writer.components;
 import com.webobjects.appserver.WOComponent;
 import com.webobjects.appserver.WOContext;
 import com.webobjects.foundation.NSMutableArray;
+import com.webobjects.foundation.NSTimestamp;
 
 import ch.mizilovefairy.happy_writer.db.BestellPosition;
 import ch.mizilovefairy.happy_writer.db.Bestellung;
@@ -15,19 +16,26 @@ public class PKontrolle extends BaseComponent {
 
 	public PKontrolle(WOContext context) {
 		super(context);
-		kunde = session().getKunde();
-		bestellung = session().getBestellung();
-		session().setPageTitle("Kontrolle");
 	}
-	
+
 	public final WOComponent commit() {
 		// verbinde bestellung mit den waren im warenkorb
 		NSMutableArray<BestellPosition> warenkorb = session().getWarenkorb();
-		Bestellung bestellung = session().getBestellung();
 		warenkorb.forEach(ware -> ware.setBestellung(bestellung));
 		// speichere es auf die datenbank
+		NSTimestamp now = new NSTimestamp();
+		System.out.println("new" + now);
+		kunde.setKundeSeit(now);
+		bestellung.setDatum(now);
+		System.out.println("datum" + bestellung.datum());
 		session().defaultEditingContext().saveChanges();
 		return pageWithName(PDanke.class);
+	}
+
+	public final WOComponent back() {
+		kunde.delete();
+		bestellung.delete();
+		return pageWithName(Main.class);
 	}
 
 	public final Kunde getKunde() {
@@ -45,5 +53,5 @@ public class PKontrolle extends BaseComponent {
 	public final void setBestellung(Bestellung bestellung) {
 		this.bestellung = bestellung;
 	}
-	
+
 }

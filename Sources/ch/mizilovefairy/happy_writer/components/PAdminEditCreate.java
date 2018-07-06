@@ -11,11 +11,10 @@ public class PAdminEditCreate extends BaseComponent {
 
 	public PAdminEditCreate(WOContext context) {
 		super(context);
-		session().setPageTitle("Admin");
 	}
 	
 	public final WOComponent submit() {
-		return pageWithName(PAdmin.class);
+		return pageWithName(PAdminInhalt.class);
 		
 	}
 

@@ -36,7 +36,6 @@ public class PArtikel extends BaseComponent {
 
 	public PArtikel(WOContext context) {
 		super(context);
-		session().setPageTitle("Artikel");
 	}
 
 	/**
@@ -53,6 +52,10 @@ public class PArtikel extends BaseComponent {
 		ware.setArtikel(artikel);
 		inhalteSelections.forEach(i -> ware.addToInhalte(i));
 		session().getWarenkorb().add(ware);
+		return pageWithName(Main.class);
+	}
+	
+	public final WOComponent back() {
 		return pageWithName(Main.class);
 	}
 

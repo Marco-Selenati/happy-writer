@@ -36,6 +36,10 @@ F: Wie benutze ich Checkbox matrix
 
 A: [Wonder Checkbox Matrix](https://github.com/wocommunity/wonder/blob/4d7f6bf9236c3005359101d6f3c9e6224d47750e/Frameworks/Core/JavaWOExtensions/Sources/com/webobjects/woextensions/WOCheckboxMatrix.java)
 
+F: Wie kann ich nur buchstaben im namen und vornamen haben
+
+A: [Regex](https://stackoverflow.com/questions/23415795/how-to-only-allow-text-in-parsely-js-validation)
+
 ## Herr Bärlocher
 
 F: Wissen Sie wie man CSS einbinden soll
@@ -46,8 +50,26 @@ F: Wissen Sie wie man JavaScript einbindet
 
 A: ERX JavaScript
 
+F: Wie kann ich ein design für das aussehen der Webseite erstellen?
+
+A: draw io
+
+F: Können Sie sich meine applikation ansehen und mir sagen ob Sie Probleme sehen?
+
+A:
+    Vorname, Nachnahme sollte nur buchstaben haben
+    Telefon sollte nur nummern und + () haben
+
 ## Herr Standhart
 
 F: Wissen Sie wie ich die checkboxen werte in ein Array reinbekomme?
 
 A: Ich habe einfach Checkbox matrix benutzt.
+
+## Frau Fusco
+
+F: Wollen Sie sich meine Applikation ansehen?
+
+A: Ja
+    Artikel und Inhalt sind verwirrend da Inhalte auch Artikel sind. Inhaltsartikel anstaat Inhalt.
+    Admin Login sollte auf den CMS Seiten nicht angezeigt werden

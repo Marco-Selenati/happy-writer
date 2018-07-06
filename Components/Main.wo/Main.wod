@@ -1,15 +1,18 @@
 CheckOut : WOHyperlink {
 	action = checkOut;
+	class="btn btn-primary";
+	role="button";
 }
 
 Menu: WOActiveImage {
 	action = clickOutSide;
 	filename = "assets/Menu.jpg";
 	framework = "app";
-	imageMapFile = "assets/Menu.map"
+	imageMapFile = "assets/Menu.map";
 }
 
 wrapper : BaseLayout {
+	pageTitle = "HappyWriter";
 }
 
 artikel : WORepetition {
@@ -26,19 +29,29 @@ artikelName : WOString {
 	value = wareLoopVar.artikel.bezeichnung;
 }
 
+artikelPreis : WOString {
+	value = wareLoopVar.artikel.preis;
+}
+
 artikelEntfernen : WOHyperlink {
 	action = artikelEntfernen;
+	class="btn btn-danger";
+	role="button";
 }
 
 inhaltName : WOString {
 	value = inhaltLoopVar.name;
 }
 
+inhaltPreis : WOString {
+	value = inhaltLoopVar.preis;
+}
+
+gesamtPreis : WOString {
+	value = gesamtPreis;
+}
+
 nonEmptyWarenkorb : WOConditional {
   condition = isWarenkorbEmpty;
   negate = true;
-}
-
-adminLogin : WOHyperlink {
-	action = adminLogin;
 }

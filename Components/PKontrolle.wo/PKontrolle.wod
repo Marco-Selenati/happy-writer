@@ -1,41 +1,61 @@
 Nachname : WOTextField {
   value = kunde.nachname;
-  id = "Nachname"
+  id = "Nachname";
+  class="form-control";
 }
 
 Vorname : WOTextField {
   value = kunde.vorname;
-  id = "Vorname"
+  id = "Vorname";
+  class="form-control";
 }
 
 Strasse : WOTextField {
   value = kunde.strasse;
-  id = "Strasse"
+  id = "Strasse";
+  class="form-control";
 }
 
 PLZ : WOTextField {
   value = kunde.plz;
-  id = "PLZ"
+  id = "PLZ";
+  class="form-control";
 }
 
 Ort : WOTextField {
   value = kunde.ort;
-  id = "Ort"
+  id = "Ort";
+  class="form-control";
 }
 
 Telefon : WOTextField {
   value = kunde.tel;
-  id = "Telefon"
+  id = "Telefon";
+  class="form-control";
 }
 
 Bemerkungen : WOText {
   value = bestellung.bemerkungen;
-  id = "Bemerkungen"
+  id = "Bemerkungen";
+  class="form-control";
+}
+
+submit : WOSubmitButton {
+	action = commit;
+	value = "Bestätigen";
+	class="btn btn-primary";
+}
+
+userDaten : WOForm {
+	multipleSubmit = true;
 }
 
 wrapper : BaseLayout {
+	pageTitle = "Kontrolle";
 }
 
-commit : WOHyperlink {
-	action = commit;
+back : WOHyperlink {
+	action = back;
+	class="btn btn-secondary m-3";
+	role="button";
 }

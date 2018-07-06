@@ -1,6 +1,11 @@
 {
     attributes = (
-        {columnName = bemerkungen; name = bemerkungen; prototypeName = varchar255; }, 
+        {
+            allowsNull = Y; 
+            columnName = bemerkungen; 
+            name = bemerkungen; 
+            prototypeName = varchar255; 
+        }, 
         {columnName = datum; name = datum; prototypeName = date; }, 
         {allowsNull = N; name = id; prototypeName = id; }, 
         {

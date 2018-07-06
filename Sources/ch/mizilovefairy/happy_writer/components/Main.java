@@ -1,5 +1,6 @@
 package ch.mizilovefairy.happy_writer.components;
 
+import java.math.BigDecimal;
 import com.webobjects.appserver.WOComponent;
 import com.webobjects.appserver.WOContext;
 import com.webobjects.foundation.NSMutableArray;
@@ -15,7 +16,6 @@ public class Main extends BaseComponent {
 
 	public Main(WOContext context) {
 		super(context);
-		session().setPageTitle("HappyWriter");
 	}
 
 	public WOComponent checkOut() {
@@ -27,16 +27,23 @@ public class Main extends BaseComponent {
 		return null;
 	}
 	
+	public final String gesamtPreis() {
+		BigDecimal summe = new BigDecimal(0);
+		for (BestellPosition bp : session().getWarenkorb()) {
+			summe = summe.add(bp.artikel().preis());
+			for (Inhalt inhalt : bp.inhalte()) {
+				summe = summe.add(inhalt.preis());
+			}
+		}
+		return summe.toString();
+	}
+	
 	public WOComponent etuiBestellen() {
 		return(getPageWithArticle("Etui"));
 	}
 	
 	public WOComponent schachtelBestellen() {
 		return(getPageWithArticle("Holzschachtel"));
-	}
-	
-	public WOComponent adminLogin() {
-		return pageWithName(PAdminLogin.class);
 	}
 	
 	private final WOComponent getPageWithArticle(String bezeichnung) {

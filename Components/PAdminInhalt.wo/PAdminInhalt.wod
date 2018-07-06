@@ -1,0 +1,47 @@
+
+wrapper : AdminLayout {
+	pageTitle = "Admin";
+}
+
+inhalte : WORepetition {
+	list = session.inhalte;
+	item = inhaltLoopVar;
+}
+
+inhaltName : WOString {
+	value = inhaltLoopVar.name;
+}
+
+inhaltPreis : WOString {
+	value = inhaltLoopVar.preis;
+}
+
+inhaltDelete : WOHyperlink {
+	action = inhaltDelete;
+	class = "btn btn-danger";
+}
+
+inhaltEdit : WOHyperlink {
+	action = inhaltEdit;
+	class = "btn btn-secondary";
+}
+
+inhaltNew : WOHyperlink {
+	action = inhaltNew;
+	class = "btn btn-secondary m-3";
+}
+
+commit : WOHyperlink {
+	action = commit;
+	class = "btn btn-primary";
+}
+
+abort : WOHyperlink {
+	action = abort;
+	class = "btn btn-danger";
+}
+
+back : WOHyperlink {
+	action = back;
+	class = "btn btn-secondary";
+}

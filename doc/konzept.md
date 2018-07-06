@@ -2,6 +2,10 @@
 
 ## Admin bereich
 
+Der admin kann auswählen ob er inhalte zu artikeln hinzufügen will oder mit bestehenden inhalten etwas machen will.
+
+Ich musse es in verschiedene Unterseiten aufteilen da wenn man die inhalte editiert in der hauptseite und nachher in die unterseite geht und speichert, speichert es auch die veränderungen in der hauptseite. Dieses verhalten finde ich nicht intuitiv.
+
 Der Administrator kann die *Inhalte:
 1. Editieren
 2. Hinzufügen
@@ -32,4 +36,5 @@ Daten auf den einzelnen seiten gegeben
 * Project Wonder
 * jQuery
 * Bootstrap
+* Parsley
 

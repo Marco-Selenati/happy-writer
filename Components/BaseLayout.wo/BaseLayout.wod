@@ -1,7 +1,22 @@
 content : WOComponentContent {
-	
 }
 
-title : WOString {
-  value = session.pageTitle;
+wrapper : EmptyLayout {
+  pageTitle = pageTitle;
+}
+
+homepage : WOHyperlink {
+	action = homepage;
+	class = "navbar-brand";
+}
+
+adminLogin : WOHyperlink {
+	action = adminLogin;
+	class = "nav-link";
+}
+
+logo : WOImage {
+	filename = "assets/logo.jpg";
+	width="60px";
+	height="auto";
 }

@@ -16,9 +16,28 @@ artikelBestellen : WOForm {
 	multipleSubmit = true;
 }
 
-submit : WOSubmitButton {
-	action = submit;
+wrapper : BaseLayout {
+	pageTitle = "Artikel";
 }
 
-wrapper : BaseLayout {
+submit : WOSubmitButton {
+	action = submit;
+	class = "btn btn-primary m-3";
+	value = "Kaufen";
+}
+
+back : WOHyperlink {
+	action = back;
+	class="btn btn-secondary m-3";
+	role="button";
+}
+
+iconArtikel : WOImage {
+	filename = artikel.icon;
+	style="width: auto;height: 40px;";
+}
+
+iconInhalt : WOImage {
+	filename = inhaltLoopVar.icon;
+	style="width: auto;height: 40px;";
 }

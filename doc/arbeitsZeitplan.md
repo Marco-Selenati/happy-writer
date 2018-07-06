@@ -74,3 +74,62 @@ Admin inhalt management seiten
 
 Administrator Artikel konfiguration
 8:10-8:20 8:40-10:00
+
+einrichten/erstellen eines templates für die dokumentation
+14:00-18:00 22:00-24:00
+
+# 6 Juli 2018
+
+testen
+7:00-7:15
+
+problem gefunden konzept ändern
+7:15-7:46
+
+bemerkunen optional machen
+8:10-8:24
+
+Umsetzung des neuen administrations bereiches
+8:41-9:05
+
+Design erstellen
+9:10-9:45
+
+Erstellen basis layouts in bootstrap
+9:45-10:13 10:20-10:30
+
+Erstellen der hauptseite mit style
+10:30-11:35
+
+Erstellen der Artikel seite
+11:35-12:05
+
+Checkout/Kontrolle sites
+12:05-12:17
+
+session terminieren
+12:17-12:20
+
+Erstellen der Admin login in seite
+12:20-12:27
+
+Erstellen des admin bereiches
+13:30-13:36
+
+Admin Artikel Seite stylen
+13:37-14:00
+
+Admin Inhalts Seite stylen
+14:00-14:10
+
+Admin Inhalts Edit/Create Seite stylen
+14:10-14:13
+
+Parsley Validation
+14:13-14:40
+
+Artikel und Inhalte mit icons
+14:40-15:05
+
+Kleine verbesserungen
+15:05-16:03

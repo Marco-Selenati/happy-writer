@@ -1,5 +1,6 @@
 
-wrapper : BaseLayout {
+wrapper : AdminLayout {
+	pageTitle = "Admin"
 }
 
 artikelBezeichnung : WOString {
@@ -26,20 +27,25 @@ inhaltPreis : WOString {
 
 removeInhaltFromArtikel : WOHyperlink {
 	action = removeInhaltFromArtikel;
+	class = "btn btn-secondary";
 }
 
 addInhaltToArticle : WOHyperlink {
 	action = addInhaltToArticle;
+	class = "btn btn-secondary";
 }
 
 commit : WOHyperlink {
 	action = commit;
+	class = "btn btn-primary";
 }
 
 abort : WOHyperlink {
 	action = abort;
+	class = "btn btn-danger";
 }
 
 back : WOHyperlink {
 	action = back;
+	class = "btn btn-secondary";
 }
