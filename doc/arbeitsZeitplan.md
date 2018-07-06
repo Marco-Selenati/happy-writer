@@ -135,9 +135,9 @@ Kleine verbesserungen
 15:05-16:03
 
 Dokumentation Schreiben/ Über dokumentieren lesen
-18:00-00:00
+18:00-24:00
 
 ## 7 Juli 2018
 
 Dokumentation Schreiben/ Über dokumentieren lesen
-00:00-
+00:00-01:00
