@@ -130,3 +130,6 @@ Parsley Validation
 
 Artikel und Inhalte mit icons
 14:40-15:05
+
+Kleine verbesserungen
+15:05-16:03

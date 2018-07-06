@@ -7,15 +7,16 @@ wrapper : EmptyLayout {
 
 homepage : WOHyperlink {
 	action = homepage;
-	class = "navbar-brand"
+	class = "navbar-brand";
 }
 
 adminLogin : WOHyperlink {
 	action = adminLogin;
-	class = "nav-link"
+	class = "nav-link";
 }
 
 logo : WOImage {
 	filename = "assets/logo.jpg";
-	height = "80px";
+	width="60px";
+	height="auto";
 }
