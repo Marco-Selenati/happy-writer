@@ -1,9 +1,5 @@
 # Dokumentation Projektarbeit `HappyWriter'
 
-## Zugangsdaten
-
-Der zugang zum Adminbereich ist geschützt durch den Usernamen "admin" und das Passwort "klapp42stuhl".
-
 ## Development install
 
 ### Vorraussetzungen
@@ -34,6 +30,10 @@ Jetzt importieren wir das Projekt in unsere WOnder Eclipse Umgebung. Gehen Sie i
 Wenn Ihr Eclipse errors anzeigt, können Sie versuchen, das Projekt zu cleanen. Wenn Sie dann das Projekt bauen, sollten die Fehler verschwunden sein. Eclipse zeigt meistens Fehler an, wenn die projektspezifischen Dateien nicht mehr mit dem aktuellen working tree synchron sind.
 
 \pagebreak
+
+## Zugangsdaten
+
+Der zugang zum Adminbereich ist geschützt durch den Usernamen "admin" und das Passwort "klapp42stuhl".
 
 ## Bestätigt funktionsfähig auf
 
