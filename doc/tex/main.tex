@@ -1,0 +1,283 @@
+\documentclass[a4paper, 11pt]{article}
+
+% packages
+\usepackage{fontspec}
+\usepackage{textcomp}
+% syntax highlighting
+\usepackage{minted}
+% auflistungen
+\usepackage[ampersand]{easylist}
+% verbesserungen zum style
+\usepackage{amsmath, amssymb, amsthm}
+% frage antwort
+\usepackage{dramatist}
+% hyperlinks
+\usepackage{hyperref}
+% sprach unterstützung
+\usepackage[nswissgerman]{babel}
+% schönere font
+\usepackage{unicode-math}
+% hier setzen wir die Font welche bei den code auflistungen verwendet werden soll
+\setmonofont[
+  Contextuals={Alternate}
+]{Fira Code}
+\usepackage{lmodern}
+% header und footer
+\usepackage{fancyhdr}
+% hier definieren wir unseren eigenen header/footer style
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+
+% Setzt die default formatierung für die java sprache
+\setminted[java]{
+frame=leftline,
+framesep=8mm,
+numbersep=12pt,
+numbersep=5pt,
+fontsize=\small,
+baselinestretch=1.5,
+tabsize=4,
+gobble=0,
+linenos
+}
+
+% lange wörter auseinander brechen
+\hyphenation{
+	datenbank-gestützten
+	Schreib-waren-handlung
+}
+% dokument informationen/title
+\title{Dokumentation Projektarbeit `HappyWriter'}
+\author{Marco Selenati\\
+	IFZ-624-002\\
+	Stiftung Wirtschaftsinformatikschule Schweiz,\\
+	Hohlstrasse 535,\\
+	Zürich,\\
+	Schweiz\\
+	marcoselenati@gmail.com}
+\date{\today}
+
+\begin{document}
+% titelseite
+\maketitle
+\clearpage
+
+% inhaltsverzeichnis
+\pagenumbering{roman}
+\tableofcontents
+% nichts anderes sollte auf der inhalts seite sein
+% darum beenden wir hier die seite
+\clearpage
+% anfang inhalt
+\pagenumbering{arabic}
+\pagestyle{fancy}
+
+\begin{abstract}
+
+	Erstellung eines datenbankgestützten Online-Shops für eine Schreibwarenhandlung, mit einem verwaltungs system für Inhaltsartikel.
+
+\end{abstract}
+
+\section{Einleitung}
+
+Bei diesem Projekt geht es darum, für den Schreibwarenhandlung `HappyWriter' einen datenbankgestützten Online-Shop zu erstellen.
+Ich bin Marco Selenati, besuche das 4 Semester der Wirtschaftsinformatikschule Zürich und bin einziger Projektteilnehmer.
+Diese Projektbeschreibung wird Ihnen aufzeigen wie ich diesen Webshop erstellt habe.
+
+\section{Problemstellung}
+
+Ziel dieses Projektes ist es, Innerhalb einer Woche dem Unternehmen einen funktionierenden Webshop zu Verfügung zu stellen.
+In diesem ist auch ein System für das Verwalten von Inhaltsartikeln inbegriffen.
+Dieser Webshop eröffnet dem Unternehmen einen neuen Verkaufskanal.
+
+\section{Anforderungen}
+
+Die Projekt Anforderungen, welche aus den Aufgabeblätter\cite{Aufgabeblaetter} sind, sind wie folgt.
+
+\begin{easylist}[itemize]
+	& Project Wonder
+	& SQL Skript einrichtung der DB
+	& Dokumentation als PDF
+	&& Betriebshandbuch
+	&& Hilfestellungen
+	& Ein in Eclipse importierbares Projekt
+	& Das vorgegebene ERD benutzen
+\end{easylist}
+
+\section{Projektdurchführung}
+
+\subsection{Planung}
+
+\begin{easylist}
+	& Erstellen des konzeptes
+	&& Klassen
+	&& Administrationsbereich
+	&& Tests
+
+	& Projekt umgebung herstellen
+	&& Erstellen des git Repository
+
+	& Erstellen des EOModels
+	&& Nach gegebenen ERD
+	&& SQL kommentieren
+	&& Seed (Test) daten
+
+	& Funktionalitäten erstellen
+	&& Der normalbenutzer Seiten
+	&& Der Administrations Seiten
+
+	& Seite testen
+	& Die Seiten Stylen
+	& Form validierung
+	& Seite testen
+	& Projekt dokumentation schreiben
+
+\end{easylist}
+
+\subsection{Probleme}
+
+\subsubsection{Inhalte anzeigen}
+
+\subsubsection{Checkbox array}
+
+\subsubsection{Validation}
+
+\subsubsection{Component Component variablen}
+
+\subsubsection{Formular abbruch}
+
+\section{Projektergebnisse}
+
+\subsection{Testkonzept}
+
+\subsection{Ordnerstruktur}
+
+\section{Projektbewertung}
+
+\subsection{Schlussfolgerung}
+
+\subsection{Reflexion}
+
+Die arbeit an diesem Projekt war sehr Interessant.
+Ich konnte erleben wie einfach es WOnder einem macht eine Applikation zu bauen.
+Dies is aber nur möglich wenn man Objekt Orientiert denkt und die möglichkeiten von WOnder kennt.
+Ich muss beim nächsten Projekt die Transactions mehr im Kopf haben.
+
+\subsection{Zukunft}
+
+\addcontentsline{toc}{section}{Literatur}
+\begin{thebibliography}{9}
+\bibitem{Aufgabeblaetter}
+Leistungsbeurteilung Projektarbeit
+Datenbanken in Web-Auftritt einbinden (151)
+Dokumentnachweis: B14-151\_LB-Projektarbeit\_Aufgabenstellung\_18-06\_V004.docx
+
+\bibitem{Learning_the_Wonders}
+Learning the Wonders
+Markus Ruggiero
+rucotec GmbH, Switzerland; 1 edition (September 20, 2013)
+ASIN B00FCDHDAA
+
+\end{thebibliography}
+
+\section{Anhang}
+
+\subsection{Benutzte Ressourcen}
+
+\subsection{Zeiterfassung}
+
+\subsection{Informationsbeschaffung}
+
+\begin{drama}
+	\Character{Marco Selenati}{ms}
+	\Character{Markus Ruggiero}{dozent}
+	\Character{Internet}{internet}
+	\Character{Herr Bärlocher}{lucas}
+	\Character{Frau Fusco}{fusco}
+	\Character{Herr Standhart}{standhard}
+
+\msspeaks: Kann ich die Dokumentation sollange sie am schluss PDF ist aus allem generieren lassen was ich will?
+
+\dozentspeaks: Ja Sie können es aus Markdown Word oder sogar aus einem selbst geschriebenen tool generieren lassen wenn Sie wollen
+
+\msspeaks: Auf dem vorgegebenen ERD steht dass bei der konfigurations tabelle ein attribut mit dem namen inhalt\_d sein soll muss ich dass genau so machen?
+
+\dozentspeaks: Nein dass sollte inhalt\_id sein dass muss ein tippfehler sein.
+
+\msspeaks: Die bestellübersichts seite ist niergends im text vorhanden wo kommt diese hin?
+
+\dozentspeaks: Die bestellübersichts seite ist eine bessere version der Main seite. Da die bestellübersichts seite eine bessere warenkorbs auflistung hat
+
+\msspeaks: Kann ich die bilder der Inhalte bei der Auswahl der Inhalte anzeigen
+
+\dozentspeaks: Währe gut wenn es so währe
+
+\msspeaks: Muss ich angeben dass ich die gegebenen Bilder benutze?
+
+\dozentspeaks: Ja, in der Dokumentation reicht. Sie können es schon auf der Seite angeben aber es ist ok wenn ohne
+
+\msspeaks: Darf ich die namen im UML umbenennen?
+
+\dozentspeaks: Ja
+
+\msspeaks: Darf ich das ganze anderst gestalten wie es im UML steht?
+
+\dozentspeaks: Ja, dass UML ist nur ein vorschlag
+
+\msspeaks: Wie benutze ich Checkbox matrix
+
+\internetspeaks: \href{https://github.com/wocommunity/wonder/blob/4d7f6bf9236c3005359101d6f3c9e6224d47750e/Frameworks/Core/JavaWOExtensions/Sources/com/webobjects/woextensions/WOCheckboxMatrix.java}{WOnder dokumentation}
+
+\msspeaks: Wie kann ich nur buchstaben im namen und vornamen haben
+
+\internetspeaks: \href{https://stackoverflow.com/questions/23415795/how-to-only-allow-text-in-parsely-js-validation}{stackoverflow parsley}
+
+\msspeaks: Wissen Sie wie man CSS einbinden soll
+
+\lucasspeaks: ERXStyleSheet
+
+\msspeaks: Wissen Sie wie man JavaScript einbindet
+
+\lucasspeaks: ERX JavaScript
+
+\msspeaks: Wie kann ich ein design für das aussehen der Webseite erstellen?
+
+\lucasspeaks: draw io
+
+\msspeaks: Können Sie sich meine applikation ansehen und mir sagen ob Sie Probleme sehen?
+
+\lucasspeaks:
+    Vorname, Nachnahme sollte nur buchstaben haben
+    Telefon sollte nur nummern und + () haben
+
+\msspeaks: Wissen Sie wie ich die checkboxen werte in ein Array reinbekomme?
+
+\standhardspeaks: Ich habe einfach Checkbox matrix benutzt.
+
+\msspeaks: Wollen Sie sich meine Applikation ansehen?
+
+\fuscospeaks: Ja
+    Artikel und Inhalt sind verwirrend da Inhalte auch Artikel sind. Inhaltsartikel anstaat Inhalt.
+    Admin Login sollte auf den CMS Seiten nicht angezeigt werden
+
+\end{drama}
+
+\begin{minted}{java}
+	private Artikel artikel;
+	/**
+	* Der inhalt in der jetzigen iteration
+	*/
+	private Inhalt inhaltLoopVar;
+	
+	/**
+	 * Die inhalte welche auf der Seite ausgewählt worden
+	 * sind, sind in diesem array drinn, bei der submit methode
+	 * 
+	 */
+	private NSMutableArray<Inhalt> inhalteSelections;
+	\end{minted}
+\end{document}
