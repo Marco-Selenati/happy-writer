@@ -1,5 +1,12 @@
 # Dokumentation Projektarbeit `HappyWriter'
 
+## Dokumentation
+
+Sie finden im diesem Dokument die Installation,
+Zugangsdaten sowie die Angaben des PC's auf welcher die funktionalität bestätigt wurde.
+
+Im dokument "/doc/tex/main.pdf" finden Sie den rest der Dokumentation.
+
 ## Development install
 
 ### Vorraussetzungen
@@ -25,11 +32,11 @@ Als erstes werden wir die Datenbank einrichten. Zuerst erstellen Sie eine neue D
 
 Jetzt importieren wir das Projekt in unsere WOnder Eclipse Umgebung. Gehen Sie in Ihr Eclipse und gehen Sie auf File -> Import Existing Projects into Workspace. Root directory ist der root Ordner dieses Projektes, der Ordner in welchem das README.md ist. Ich empfehle, die Option Copy projects into Workspace nicht zu setzen. Nun sollten Sie ein funktionierendes WOnder Projekt haben.
 
+\pagebreak
+
 ### Probleme
 
 Wenn Ihr Eclipse errors anzeigt, können Sie versuchen, das Projekt zu cleanen. Wenn Sie dann das Projekt bauen, sollten die Fehler verschwunden sein. Eclipse zeigt meistens Fehler an, wenn die projektspezifischen Dateien nicht mehr mit dem aktuellen working tree synchron sind.
-
-\pagebreak
 
 ## Zugangsdaten
 
