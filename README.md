@@ -1,4 +1,8 @@
-# HappyWriter
+# Dokumentation Projektarbeit `HappyWriter'
+
+## Zugangsdaten
+
+Der zugang zum Adminbereich ist geschützt durch den Usernamen "admin" und das Passwort "klapp42stuhl".
 
 ## Development install
 
