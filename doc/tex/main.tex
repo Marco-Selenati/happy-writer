@@ -7,20 +7,20 @@
 \usepackage{minted}
 % Auflistungen
 \usepackage[ampersand]{easylist}
-% Verbesserungen zum style
+% Verbesserungen zum Style
 \usepackage{amsmath, amssymb, amsthm}
 % Frage Antwort
 \usepackage{dramatist}
 % hyperlinks
 \usepackage{hyperref}
-% Table formatierung
+% Table Formatierung
 \usepackage{array}
 \usepackage{tabularx}
 \usepackage{booktabs}
 \usepackage{longtable}
 % Sprachunterstützung
 \usepackage[nswissgerman]{babel}
-% schönere font
+% schönere Font
 \usepackage{unicode-math}
 % hier setzen wir die Font welche bei den Codeauflistungen verwendet werden soll
 \setmonofont[
@@ -132,20 +132,20 @@ Die Projektanforderungen, welche aus den Aufgabeblätter\cite{Aufgabeblaetter} s
 	&& Seed (Test) Daten
 
 	& Funktionalitäten erstellen
-	&& Der normalbenutzer Seiten
+	&& Der Normalbenutzer Seiten
 	&& Der Administrations Seiten
 
 	& Seite testen
 	& Die Seiten Stylen
-	& Form validierung
+	& Form Validierung
 	& Seite testen
-	& Projekt dokumentation schreiben
+	& Projekt Dokumentation schreiben
 
 \end{easylist}
 
 \subsection{Probleme}
 
-Ich hatte Probleme, welche interessant waren, ich stelle Ihnen ein paar davon vor.
+Ich hatte Probleme, welche interessant waren und stelle Ihnen ein paar davon vor.
 
 \subsubsection{Inhalte anzeigen}
 
@@ -175,7 +175,7 @@ MariaDB 10
 
 \paragraph{Webseite ist Erreichbar}
 
-Ich verbinde mich zu der URL auf welcher die applikation laufen sollte
+Ich verbinde mich zu der URL auf welcher die Applikation laufen sollte
 
 \subparagraph{Erfolg}
 
@@ -183,9 +183,9 @@ Die Applikation läuft und ich kann zu ihr verbinden
 
 \subparagraph{Scheitern}
 
-Die applikation ist nicht erreichbar oder gibt einen Error aus
+Die Applikation ist nicht erreichbar oder gibt einen Error aus
 
-\paragraph{Richtige Einstigsseite}
+\paragraph{Richtige Einstiegsseite}
 
 \subparagraph{Ausführen}
 
@@ -195,11 +195,11 @@ Ich verbinde mich zu der URL auf welcher sich die Applikation befindet
 
 \subparagraph{Erfolg}
 
-Es erscheint die Einstigsseite
+Es erscheint die Einstiegsseite
 
 \subparagraph{Scheitern}
 
-Es erscheint eine falsche seite
+Es erscheint eine falsche Seite
 
 \paragraph{Hinzufügen von Artikeln}
 
@@ -207,9 +207,9 @@ Es erscheint eine falsche seite
 
 \begin{minted}{text}
 Ich gehe auf die Einstiegsseite und wähle das Etui aus.
-Ich werde weitergeleitet auf die ArtikelSeite.
+Ich werde weitergeleitet auf die Artikelseite.
 Ich drücke auf Etui kaufen.
-Ich werde zur Einsigsseite weitergeleitet.
+Ich werde zur Einstiegsseite weitergeleitet.
 \end{minted}
 
 \subparagraph{Erfolg}
@@ -222,90 +222,90 @@ Ich habe nun ein Etui in ihrem Warenkorb
 
 \begin{minted}{text}
 Ich gehe auf die Einstiegsseite und wähle das Etui aus.
-Ich werde weitergeleitet auf die ArtikelSeite.
-Ich checke die checkbox für Schere.
+Ich werde weitergeleitet auf die Artikelseite.
+Ich checke die Checkbox für Schere.
 Ich drücke auf Etui kaufen.
-Ich werde zur Einsigsseite weitergeleitet.
+Ich werde zur Einstiegsseite weitergeleitet.
 \end{minted}
 
 \subparagraph{Erfolg}
 
-Ich habe nun ein Etui mit Inhalt Schere in ihrem Warenkorb
+Ich habe nun ein Etui mit Inhalt Schere in Ihrem Warenkorb
 
 \paragraph{Anschauen von Artikeln}
 
 \subparagraph{Vorraussetzung}
 
-Ich habe keine Artikel im warenkorb
+Ich habe keine Artikel im Warenkorb
 
 \subparagraph{Ausführen}
 
 \begin{minted}{text}
 Ich gehe auf die Einstiegsseite und wähle das Etui aus.
-Ich werde weitergeleitet auf die ArtikelSeite.
-Ich betätige den zurück Knopf.
+Ich werde weitergeleitet auf die Artikelseite.
+Ich betätige den Zurückknopf.
 \end{minted}
 
 \subparagraph{Erfolg}
 
-Ich habe keine Artikel im warenkorb
+Ich habe keine Artikel im Warenkorb
 
-\paragraph{Admin zurückkehren zu gespeicherten stand}
+\paragraph{Admin zurückkehren zu gespeichertem Stand}
 
 \subparagraph{Vorraussetzung}
 
-Ich habe den Inhalt aaa 12.0000 nicht in der datenbank
+Ich habe den Inhalt aaa 12.0000 nicht in der Datenbank
 
 \subparagraph{Ausführen}
 
 \begin{minted}{text}
-Ich clicke auf das admin login auf der homepage.
-Ich logge mich mit korrekten daten ein.
-Ich klick auf Neuen inhalt erstellen.
-Ich erstelle den inhalt aaa 12.0000.
-Ich Speichere den erstellten inhalt.
-Ich drücke auf Letzten gespeicherten zustand herstellen.
+Ich klicke auf das admin login auf der Homepage.
+Ich logge mich mit korrekten Daten ein.
+Ich klicke auf Neuen Inhalt erstellen.
+Ich erstelle den Inhalt aaa 12.0000.
+Ich speichere den erstellten Inhalt.
+Ich drücke auf letzten gespeicherten Zustand herstellen.
 \end{minted}
 
 \subparagraph{Erfolg}
 
-Der soeben erstellte datensatz ist weg
+Der soeben erstellte Datensatz ist weg
 
 \paragraph{Admin speichern von Inhalten}
 
 \subparagraph{Vorraussetzung}
 
-Ich habe den Inhalt aaa 12.0000 nicht in der datenbank
+Ich habe den Inhalt aaa 12.0000 nicht in der Datenbank
 
 \subparagraph{Ausführen}
 
 \begin{minted}{text}
-Ich clicke auf das admin login auf der homepage.
-Ich logge mich mit korrekten daten ein.
-Ich klick auf Neuen inhalt erstellen.
-Ich erstelle den inhalt aaa 12.0000.
-Ich Speichere den erstellten inhalt.
+Ich klicke auf das admin login auf der Homepage.
+Ich logge mich mit korrekten Daten ein.
+Ich klicke auf Neuen Inhalt erstellen.
+Ich erstelle den Inhalt aaa 12.0000.
+Ich speichere den erstellten Inhalt.
 Ich drücke auf Speichern.
-Ich lasse mir den inhalt der tabelle Inhalte ausgaben.
+Ich lasse mir den Inhalt der Tabelle Inhalte ausgeben.
 \end{minted}
 
 \subparagraph{Erfolg}
 
-der soeben erstellte datensatz ist in der tabelle eingetragen.
+der soeben erstellte Datensatz ist in der Tabelle eingetragen.
 
-\paragraph{Kundendaten kontrolle zurück und abschicken}
+\paragraph{Kundendaten Kontrolle zurück und abschicken}
 
 \subparagraph{Vorraussetzung}
 
 \subparagraph{Ausführen}
 
 \begin{minted}{text}
-Ich wähle holzschachtel.
-Ich drücke kaufen.
+Ich wähle Holzschachtel.
+Ich drücke Kaufen.
 Ich drücke Check Out.
 Ich gebe a a a a a a ein.
 Ich drücke Submit.
-Ich drücke zurück.
+Ich drücke Zurück.
 Ich gebe a a a a a a ein.
 Ich drücke Submit.
 Ich drücke Bestätigen.
@@ -313,7 +313,7 @@ Ich drücke Bestätigen.
 
 \subparagraph{Erfolg}
 
-der soeben erstellte datensatz ist in der tabelle eingetragen.
+der soeben erstellte Datensatz ist in der Tabelle eingetragen.
 
 
 % Die Ordnerstruktur sollte nicht unterbrochen werden,
@@ -327,20 +327,20 @@ der soeben erstellte datensatz ist in der tabelle eingetragen.
              git repos
              WOnder Applikation
 /doc
-    Alle andere dokumentation
+    Alle andere Dokumentation
     /javadoc
         generierte JavaDoc
 /sql
-    Alle SQL dateien
+    Alle SQL Dateien
 /WebServerResources
-    Das Rootdirectory des webservers
+    Das Rootdirectory des Webservers
     /assets
         ressourcen welche für automatisch
         generierten Seiten gebraucht werden
         /Artikel
-            Artikel ressourcen
+            Artikel Ressourcen
         /Inhalt
-            Inhalt ressourcen
+            Inhalt Ressourcen
 README(.md, .pdf)
 	Hilfestellung
 	Betriebshandbuch
@@ -356,7 +356,7 @@ Die Arbeit an diesem Projekt war sehr interessant. Ich konnte erleben, wie einfa
 
 \subsection{Reflexion}
 
-Ich muss beim nächsten Projekt die Transactions mehr im Kopf haben. Ich habe immer wieder vergessen dass in der Datenbank erstellte objekte auch wenn nicht auf Sie referenziert wird bei dem nächsten saveChanges mit gespeichert werden.
+Ich muss beim nächsten Projekt die Transactions mehr im Kopf haben. Ich habe immer wieder vergessen, dass in der Datenbank erstellte Objekte, auch wenn nicht auf sie referenziert wird, bei dem nächsten saveChanges mit gespeichert werden.
 
 \addcontentsline{toc}{section}{Literatur}
 \begin{thebibliography}{9}
@@ -377,7 +377,7 @@ ASIN B00FCDHDAA
 
 \subsection{Benutzte Ressourcen}
 
-Die gegebenen bilder für die Artikel und die Inhaltsartikel.
+Die gegebenen Bilder für die Artikel und die Inhaltsartikel.
 
 \subsection{Zeiterfassung}
 
@@ -391,14 +391,14 @@ Erteilung der Aufgabe/ Lesen der Aufgabe & 10:30-11:30 \\
 Erstellen der Dokumentation & 11:30-12:00 \\
 Erstellen des Plans & 13:03-13:30 \\
 Nochmals den ganzen Auftrag durchlesen/durchdenken & 13:30-14:00 \\
-Test konzept schreiben & 14:00-15:20 \\
+Testkonzept schreiben & 14:00-15:20 \\
 Verbessern Dokumentation & 15:20-15:30 \\
 Erstellen des git repos & 19:30-19:35 \\
-Erstellen einer korrekt generierten basis  für wonder & 19:35-19:50 \\
+Erstellen einer korrekt generierten Basis  für WOnder & 19:35-19:50 \\
 EOModel erstellen & 19:50-20:40 \\
-datenbank anbindung & 21:04-21:20 \\
+Datenbankanbindung & 21:04-21:20 \\
 Datenbank SQL generieren/Seed daten rauslesen und eintragen & 22:00-22:20 \\
-User seiten erstellen(Ohne funktionalität) & 22:50-23:15 \\
+User Seiten erstellen (Ohne Funktionalität) & 22:50-23:15 \\
 \bottomrule
 \end{tabular}
 
@@ -422,11 +422,11 @@ Beschreibung & Zeit \\
 \midrule
 checkout/kontroll seiten erstellen & 9:00-10:20 \\
 base layout erstellen & 10:30-11:00 \\
-warenkorb implementieren & 11:00-11:26 \\
-warenkorb Artikel löschen & 16:40-17:10 \\
+Warenkorb implementieren & 11:00-11:26 \\
+Warenkorb Artikel löschen & 16:40-17:10 \\
 Dynamischer title für die Seiten & 17:20-17:40 \\
 Added Admin login page & 18:05-18:35 \\
-Admin inhalt management seiten & 19:50-20:20 \\
+Admin Inhalt management Seiten & 19:50-20:20 \\
  & 20:55-21:58 \\
 \bottomrule
 \end{tabular}
@@ -437,9 +437,9 @@ Admin inhalt management seiten & 19:50-20:20 \\
 \toprule
 Beschreibung & Zeit \\
 \midrule
-Administrator Artikel konfiguration & 8:10-8:20 \\
+Administrator Artikel Konfiguration & 8:10-8:20 \\
  & 8:40-10:00 \\
-einrichten/erstellen eines templates für die dokumentation & 14:00-18:00 \\
+einrichten/erstellen eines Templates für die Dokumentation & 14:00-18:00 \\
  & 22:00-24:00 \\
 \bottomrule
 \end{tabular}
@@ -451,14 +451,14 @@ einrichten/erstellen eines templates für die dokumentation & 14:00-18:00 \\
 Beschreibung & Zeit \\
 \midrule
 testen & 7:00-7:15 \\
-problem gefunden konzept ändern & 7:15-7:46 \\
-bemerkunen optional machen & 8:10-8:24 \\
-Umsetzung des neuen administrations bereiches & 8:41-9:05 \\
+Problem gefunden Konzept ändern & 7:15-7:46 \\
+Bemerkungen optional machen & 8:10-8:24 \\
+Umsetzung des neuen Administrationsbereiches & 8:41-9:05 \\
 Design erstellen & 9:10-9:45 \\
 Erstellen basis layouts in bootstrap & 9:45-10:13 \\
  & 10:20-10:30 \\
-Erstellen der hauptseite mit style & 10:30-11:35 \\
-Erstellen der Artikel seite & 11:35-12:05 \\
+Erstellen der Hauptseite mit style & 10:30-11:35 \\
+Erstellen der Artikelseite & 11:35-12:05 \\
 Checkout/Kontrolle sites & 12:05-12:17 \\
 session terminieren & 12:17-12:20 \\
 Erstellen der Admin login in seite & 12:20-12:27 \\
@@ -468,8 +468,8 @@ Admin Inhalts Seite stylen & 14:00-14:10 \\
 Admin Inhalts Edit/Create Seite stylen & 14:10-14:13 \\
 Parsley Validation & 14:13-14:40 \\
 Artikel und Inhalte mit icons & 14:40-15:05 \\
-Kleine verbesserungen & 15:05-16:03 \\
-Dokumentation Schreiben/ Über dokumentieren lesen & 18:00-24:00 \\
+Kleine Verbesserungen & 15:05-16:03 \\
+Dokumentation schreiben/ Über Dokumentieren lesen & 18:00-24:00 \\
 \bottomrule
 \end{tabular}
 
@@ -479,7 +479,7 @@ Dokumentation Schreiben/ Über dokumentieren lesen & 18:00-24:00 \\
 \toprule
 Beschreibung & Zeit \\
 \midrule
-Dokumentation Schreiben/ Über dokumentieren lesen & 00:00-01:00 \\
+Dokumentation schreiben/ Über Sokumentieren lesen & 00:00-01:00 \\
 Arbeiten an der Dokumentation & 10:00- \\
 \bottomrule
 \end{tabular}
@@ -494,9 +494,9 @@ Arbeiten an der Dokumentation & 10:00- \\
 	\Character{Frau Fusco}{fusco}
 	\Character{Herr Standhart}{standhard}
 
-\msspeaks: Kann ich die Dokumentation solange sie am Schluss PDF ist aus allem generieren lassen was ich will?
+\msspeaks: Kann ich die Dokumentation solange sie am Schluss PDF ist aus allem generieren lassen, was ich will?
 
-\dozentspeaks: Ja, Sie können es aus Markdown Word oder sogar aus einem selbst geschriebenen Tool generieren lassen wenn Sie wollen.
+\dozentspeaks: Ja, Sie können es aus Markdown Word oder sogar aus einem selbst geschriebenen Tool generieren lassen, wenn Sie wollen.
 
 \msspeaks: Auf dem vorgegebenen ERD steht, dass bei der Konfigurationstabelle ein Attribut mit dem Namen inhalt\_d sein soll. Muss ich das genau so machen?
 

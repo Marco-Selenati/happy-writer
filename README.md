@@ -3,9 +3,9 @@
 ## Dokumentation
 
 Sie finden im diesem Dokument die Installation,
-Zugangsdaten sowie die Angaben des PC's auf welcher die funktionalität bestätigt wurde.
+Zugangsdaten, sowie die Angaben des PC's, auf welcher die Funktionalität bestätigt wurde.
 
-Im dokument "/doc/tex/main.pdf" finden Sie den rest der Dokumentation.
+Im Dokument "/doc/tex/main.pdf" finden Sie den Rest der Dokumentation.
 
 ## Development install
 
@@ -21,7 +21,7 @@ Dependencies um zu kompilieren:
 Dependencies um die Dokumentation zu generieren:
 
 * LaTex distribution
-  * Hierfür habe ich [TexLive](https://www.tug.org/texlive/) benutzt
+  * Hiefür habe ich [TexLive](https://www.tug.org/texlive/) benutzt
 * Markdown to PDF konvertierer
   * Hierfür habe ich [Pandoc](https://pandoc.org/index.html) benutzt
 * Java für JavaDoc
@@ -40,7 +40,7 @@ Wenn Ihr Eclipse errors anzeigt, können Sie versuchen, das Projekt zu cleanen. 
 
 ## Zugangsdaten
 
-Der zugang zum Adminbereich ist geschützt durch den Usernamen "admin" und das Passwort "klapp42stuhl".
+Der Zugang zum Adminbereich ist geschützt durch den Usernamen "admin" und das Passwort "klapp42stuhl".
 
 ## Bestätigt funktionsfähig auf
 
