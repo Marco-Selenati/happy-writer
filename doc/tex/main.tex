@@ -5,19 +5,19 @@
 \usepackage{textcomp}
 % syntax highlighting
 \usepackage{minted}
-% auflistungen
+% Auflistungen
 \usepackage[ampersand]{easylist}
-% verbesserungen zum style
+% Verbesserungen zum style
 \usepackage{amsmath, amssymb, amsthm}
-% frage antwort
+% Frage Antwort
 \usepackage{dramatist}
 % hyperlinks
 \usepackage{hyperref}
-% sprach unterstützung
+% Sprachunterstützung
 \usepackage[nswissgerman]{babel}
 % schönere font
 \usepackage{unicode-math}
-% hier setzen wir die Font welche bei den code auflistungen verwendet werden soll
+% hier setzen wir die Font welche bei den Codeauflistungen verwendet werden soll
 \setmonofont[
   Contextuals={Alternate}
 ]{Fira Code}
@@ -32,7 +32,7 @@
 \cfoot{\thepage}
 \rfoot{}
 
-% Setzt die default formatierung für die java sprache
+% Setzt die default Formatierung für die Javasprache
 \setminted[java]{
 frame=leftline,
 framesep=8mm,
@@ -45,7 +45,7 @@ gobble=0,
 linenos
 }
 
-% lange wörter auseinander brechen
+% lange Wörter auseinander brechen
 \hyphenation{
 	datenbank-gestützten
 	Schreib-waren-handlung
@@ -62,41 +62,41 @@ linenos
 \date{\today}
 
 \begin{document}
-% titelseite
+% Titelseite
 \maketitle
 \clearpage
 
-% inhaltsverzeichnis
+% Inhaltsverzeichnis
 \pagenumbering{roman}
 \tableofcontents
-% nichts anderes sollte auf der inhalts seite sein
-% darum beenden wir hier die seite
+% nichts anderes sollte auf der Inhaltsseite sein
+% darum beenden wir hier die Seite
 \clearpage
-% anfang inhalt
+% Anfang Inhalt
 \pagenumbering{arabic}
 \pagestyle{fancy}
 
 \begin{abstract}
 
-	Erstellung eines datenbankgestützten Online-Shops für eine Schreibwarenhandlung, mit einem verwaltungs system für Inhaltsartikel.
+	Erstellung eines datenbankgestützten Online-Shops für eine Schreibwarenhandlung, mit einem Verwaltungssystem für Inhaltsartikel.
 
 \end{abstract}
 
 \section{Einleitung}
 
-Bei diesem Projekt geht es darum, für den Schreibwarenhandlung `HappyWriter' einen datenbankgestützten Online-Shop zu erstellen.
+Bei diesem Projekt geht es darum, für den Schreibwarenhandel `HappyWriter' einen datenbankgestützten Online-Shop zu erstellen.
 Ich bin Marco Selenati, besuche das 4 Semester der Wirtschaftsinformatikschule Zürich und bin einziger Projektteilnehmer.
 Diese Projektbeschreibung wird Ihnen aufzeigen wie ich diesen Webshop erstellt habe.
 
 \section{Problemstellung}
 
-Ziel dieses Projektes ist es, Innerhalb einer Woche dem Unternehmen einen funktionierenden Webshop zu Verfügung zu stellen.
+Ziel dieses Projektes ist es, innerhalb einer Woche dem Unternehmen einen funktionierenden Webshop zu Verfügung zu stellen.
 In diesem ist auch ein System für das Verwalten von Inhaltsartikeln inbegriffen.
 Dieser Webshop eröffnet dem Unternehmen einen neuen Verkaufskanal.
 
 \section{Anforderungen}
 
-Die Projekt Anforderungen, welche aus den Aufgabeblätter\cite{Aufgabeblaetter} sind, sind wie folgt.
+Die Projektanforderungen, welche aus den Aufgabeblätter\cite{Aufgabeblaetter} sind, sind wie folgt.
 
 \begin{easylist}[itemize]
 	& Project Wonder
@@ -113,18 +113,18 @@ Die Projekt Anforderungen, welche aus den Aufgabeblätter\cite{Aufgabeblaetter} 
 \subsection{Planung}
 
 \begin{easylist}
-	& Erstellen des konzeptes
+	& Erstellen des Konzeptes
 	&& Klassen
 	&& Administrationsbereich
 	&& Tests
 
-	& Projekt umgebung herstellen
+	& Projektumgebung herstellen
 	&& Erstellen des git Repository
 
 	& Erstellen des EOModels
 	&& Nach gegebenen ERD
 	&& SQL kommentieren
-	&& Seed (Test) daten
+	&& Seed (Test) Daten
 
 	& Funktionalitäten erstellen
 	&& Der normalbenutzer Seiten
@@ -162,9 +162,9 @@ Die Projekt Anforderungen, welche aus den Aufgabeblätter\cite{Aufgabeblaetter} 
 
 \subsection{Reflexion}
 
-Die arbeit an diesem Projekt war sehr Interessant.
-Ich konnte erleben wie einfach es WOnder einem macht eine Applikation zu bauen.
-Dies is aber nur möglich wenn man Objekt Orientiert denkt und die möglichkeiten von WOnder kennt.
+Die Arbeit an diesem Projekt war sehr interessant.
+Ich konnte erleben, wie einfach WOnder es einem macht, eine Applikation zu bauen.
+Dies ist aber nur möglich, wenn man objektorientiert denkt und die Möglichkeiten von WOnder kennt.
 Ich muss beim nächsten Projekt die Transactions mehr im Kopf haben.
 
 \subsection{Zukunft}
@@ -200,82 +200,82 @@ ASIN B00FCDHDAA
 	\Character{Frau Fusco}{fusco}
 	\Character{Herr Standhart}{standhard}
 
-\msspeaks: Kann ich die Dokumentation sollange sie am schluss PDF ist aus allem generieren lassen was ich will?
+\msspeaks: Kann ich die Dokumentation solange sie am Schluss PDF ist aus allem generieren lassen was ich will?
 
-\dozentspeaks: Ja Sie können es aus Markdown Word oder sogar aus einem selbst geschriebenen tool generieren lassen wenn Sie wollen
+\dozentspeaks: Ja, Sie können es aus Markdown Word oder sogar aus einem selbst geschriebenen Tool generieren lassen wenn Sie wollen.
 
-\msspeaks: Auf dem vorgegebenen ERD steht dass bei der konfigurations tabelle ein attribut mit dem namen inhalt\_d sein soll muss ich dass genau so machen?
+\msspeaks: Auf dem vorgegebenen ERD steht, dass bei der Konfigurationstabelle ein Attribut mit dem Namen inhalt\_d sein soll. Muss ich das genau so machen?
 
-\dozentspeaks: Nein dass sollte inhalt\_id sein dass muss ein tippfehler sein.
+\dozentspeaks: Nein, das sollte inhalt\_id sein. Das muss ein Tippfehler sein.
 
-\msspeaks: Die bestellübersichts seite ist niergends im text vorhanden wo kommt diese hin?
+\msspeaks: Die Bestellübersichtsseite ist nirgends im Text vorhanden. Wo kommt diese hin?
 
-\dozentspeaks: Die bestellübersichts seite ist eine bessere version der Main seite. Da die bestellübersichts seite eine bessere warenkorbs auflistung hat
+\dozentspeaks: Die Bestellübersichtsseite ist eine bessere Version der Mainseite. Da die Bestellübersichtsseite eine bessere Warenkorbauflistung hat.
 
-\msspeaks: Kann ich die bilder der Inhalte bei der Auswahl der Inhalte anzeigen
+\msspeaks: Kann ich die Bilder der Inhalte bei der Auswahl der Inhalte anzeigen?
 
-\dozentspeaks: Währe gut wenn es so währe
+\dozentspeaks: Wäre gut, wenn es so wäre.
 
 \msspeaks: Muss ich angeben dass ich die gegebenen Bilder benutze?
 
-\dozentspeaks: Ja, in der Dokumentation reicht. Sie können es schon auf der Seite angeben aber es ist ok wenn ohne
+\dozentspeaks: Ja, in der Dokumentation reicht. Sie können es schon auf der Seite angeben, aber es ist ok, wenn ohne.
 
-\msspeaks: Darf ich die namen im UML umbenennen?
+\msspeaks: Darf ich die Namen im UML umbenennen?
 
-\dozentspeaks: Ja
+\dozentspeaks: Ja.
 
-\msspeaks: Darf ich das ganze anderst gestalten wie es im UML steht?
+\msspeaks: Darf ich das ganze anders gestalten wie es im UML steht?
 
-\dozentspeaks: Ja, dass UML ist nur ein vorschlag
+\dozentspeaks: Ja, dass UML ist nur ein Vorschlag.
 
 \msspeaks: Wie benutze ich Checkbox matrix
 
 \internetspeaks: \href{https://github.com/wocommunity/wonder/blob/4d7f6bf9236c3005359101d6f3c9e6224d47750e/Frameworks/Core/JavaWOExtensions/Sources/com/webobjects/woextensions/WOCheckboxMatrix.java}{WOnder dokumentation}
 
-\msspeaks: Wie kann ich nur buchstaben im namen und vornamen haben
+\msspeaks: Wie kann ich nur Buchstaben im Namen und Vornamen haben?
 
 \internetspeaks: \href{https://stackoverflow.com/questions/23415795/how-to-only-allow-text-in-parsely-js-validation}{stackoverflow parsley}
 
-\msspeaks: Wissen Sie wie man CSS einbinden soll
+\msspeaks: Wissen Sie, wie man CSS einbinden soll?
 
 \lucasspeaks: ERXStyleSheet
 
-\msspeaks: Wissen Sie wie man JavaScript einbindet
+\msspeaks: Wissen Sie, wie man JavaScript einbindet?
 
 \lucasspeaks: ERX JavaScript
 
-\msspeaks: Wie kann ich ein design für das aussehen der Webseite erstellen?
+\msspeaks: Wie kann ich ein Design für das Aussehen der Webseite erstellen?
 
-\lucasspeaks: draw io
+\lucasspeaks: draw io.
 
-\msspeaks: Können Sie sich meine applikation ansehen und mir sagen ob Sie Probleme sehen?
+\msspeaks: Können Sie sich meine Applikation ansehen und mir sagen, ob Sie Probleme sehen?
 
 \lucasspeaks:
-    Vorname, Nachnahme sollte nur buchstaben haben
-    Telefon sollte nur nummern und + () haben
+    Vorname, Nachname sollte nur Buchstaben haben
+    Telefon sollte nur Nummern und + () haben
 
-\msspeaks: Wissen Sie wie ich die checkboxen werte in ein Array reinbekomme?
+\msspeaks: Wissen Sie, wie ich die Checkboxenwerte in ein Array reinbekomme?
 
-\standhardspeaks: Ich habe einfach Checkbox matrix benutzt.
+\standhardspeaks: Ich habe einfach Checkbox Matrix benutzt.
 
 \msspeaks: Wollen Sie sich meine Applikation ansehen?
 
 \fuscospeaks: Ja
-    Artikel und Inhalt sind verwirrend da Inhalte auch Artikel sind. Inhaltsartikel anstaat Inhalt.
-    Admin Login sollte auf den CMS Seiten nicht angezeigt werden
+    Artikel und Inhalt sind verwirrend. da Inhalte auch Artikel sind. Inhaltsartikel anstatt Inhalt.
+    Admin Login sollte auf den CMS Seiten nicht angezeigt werden.
 
 \end{drama}
 
 \begin{minted}{java}
 	private Artikel artikel;
 	/**
-	* Der inhalt in der jetzigen iteration
+	* Der inhalt in der jetzigen Iteration
 	*/
 	private Inhalt inhaltLoopVar;
 	
 	/**
-	 * Die inhalte welche auf der Seite ausgewählt worden
-	 * sind, sind in diesem array drinn, bei der submit methode
+	 * Die Inhalte welche auf der Seite ausgewählt worden
+	 * sind, sind in diesem array drin, bei der submit Methode
 	 * 
 	 */
 	private NSMutableArray<Inhalt> inhalteSelections;
