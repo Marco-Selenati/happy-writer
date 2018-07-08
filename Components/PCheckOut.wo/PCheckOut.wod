@@ -53,6 +53,7 @@ Bemerkungen : WOText {
   value = bestellung.bemerkungen;
   id = "Bemerkungen";
   class="form-control";
+  required="";
   maxlength="255";
 }
 
