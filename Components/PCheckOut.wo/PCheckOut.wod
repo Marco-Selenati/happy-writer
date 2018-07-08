@@ -5,6 +5,7 @@ Nachname : WOTextField {
   required="";
   maxlength="50";
   data-parsley-pattern="^[a-zA-Z]+$";
+  autofocus="";
 }
 
 Vorname : WOTextField {
@@ -65,7 +66,7 @@ userDaten : WOForm {
 	data-parsley-validate = "";
 }
 
-wrapper : BaseLayout {
+wrapper : EmptyLayout {
 	pageTitle = "Check Out";
 }
 

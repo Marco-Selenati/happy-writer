@@ -50,7 +50,7 @@ userDaten : WOForm {
 	multipleSubmit = true;
 }
 
-wrapper : BaseLayout {
+wrapper : EmptyLayout {
 	pageTitle = "Kontrolle";
 }
 

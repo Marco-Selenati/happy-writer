@@ -5,6 +5,7 @@ Name : WOTextField {
   class = "form-control";
   required="";
   maxlength="50";
+  autofocus="";
 }
 
 Preis : WOTextField {

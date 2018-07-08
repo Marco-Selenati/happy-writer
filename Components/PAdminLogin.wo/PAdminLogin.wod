@@ -15,6 +15,7 @@ username : WOTextField {
   class="form-control";
   required="";
   data-parsley-required-message="Bitte geben Sie ihren Usernamen ein.";
+  autofocus="";
 }
 
 password : WOPasswordField {
