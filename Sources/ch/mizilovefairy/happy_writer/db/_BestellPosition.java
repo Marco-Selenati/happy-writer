@@ -155,8 +155,9 @@ public abstract class _BestellPosition extends  ERXGenericRecord {
   }
 
 
-  public static BestellPosition createBestellPosition(EOEditingContext editingContext, ch.mizilovefairy.happy_writer.db.Bestellung bestellung) {
+  public static BestellPosition createBestellPosition(EOEditingContext editingContext, ch.mizilovefairy.happy_writer.db.Artikel artikel, ch.mizilovefairy.happy_writer.db.Bestellung bestellung) {
     BestellPosition eo = (BestellPosition) EOUtilities.createAndInsertInstance(editingContext, _BestellPosition.ENTITY_NAME);
+    eo.setArtikelRelationship(artikel);
     eo.setBestellungRelationship(bestellung);
     return eo;
   }

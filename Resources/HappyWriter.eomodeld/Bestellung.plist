@@ -25,6 +25,7 @@
     relationships = (
         {
             destination = BestellPosition; 
+            isMandatory = Y; 
             isToMany = Y; 
             joinSemantic = EOInnerJoin; 
             joins = ({destinationAttribute = "bestellung_id"; sourceAttribute = id; }); 
