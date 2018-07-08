@@ -18,6 +18,8 @@
 \usepackage{tabularx}
 \usepackage{booktabs}
 \usepackage{longtable}
+% plant uml diagramme
+\usepackage{plantuml}
 % Sprachunterstützung
 \usepackage[nswissgerman]{babel}
 % schönere Font
@@ -112,6 +114,82 @@ Die Projektanforderungen, welche aus den Aufgabeblätter\cite{Aufgabenblaetter} 
 	& Ein in Eclipse importierbares Projekt
 	& Das vorgegebene ERD benutzen
 \end{easylist}
+
+Das vorgegebene ERD.
+
+\begin{plantuml}
+@startuml
+
+hide circle
+hide empty members
+
+entity Kunde {
+   id
+   --
+   vorname
+   nachname
+   strasse
+   ort
+   plz
+   tel
+   kundeSeit
+}
+
+entity Bestellung {
+   id
+   --
+   kunde_id
+   datum
+   bemerkungen
+}
+
+entity BestellPosition {
+   id
+   --
+   artikel_id
+   bestell_id
+}
+
+entity Artikel {
+   id
+   --
+   bezeichnung
+   preis
+}
+
+entity Inhalt {
+   id
+   --
+   name
+   preis
+}
+
+entity Konfiguration {
+   artikel_id
+   inhalt_id
+   --
+}
+
+entity BestellteKonfiguration {
+   bestellPos_id
+   inhalt_id
+   --
+}
+
+Kunde ||--|{ Bestellung
+
+Bestellung ||--|{ BestellPosition
+
+BestellPosition }o--|| Artikel
+BestellPosition ||--o{ BestellteKonfiguration
+
+Artikel ||--o{ Konfiguration
+
+Inhalt ||--o{ Konfiguration
+Inhalt ||--o{ BestellteKonfiguration
+
+@enduml
+\end{plantuml}
 
 \section{Projektdurchführung}
 
@@ -640,7 +718,8 @@ Beschreibung & Zeit \\
 JavaDoc schreiben & 12:30--13:00 \\
  & 14:00--14:10 \\
  & 14:30--15:00\\
-Dokumentation schreiben & 15:55-- \\
+Dokumentation schreiben & 15:55--17:30 \\
+ & 17:50-- \\
 \bottomrule
 \end{tabular}
 
