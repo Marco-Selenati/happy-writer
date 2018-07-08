@@ -200,9 +200,109 @@ Wenn ich abgebrochen habe die user Daten einzufüllen und nachher sie eingefüll
 
 Dieser Error kommt weil ich probiere invalide daten einzugeben.
 Die daten die ich von dem user eintragen will sind gültig.
+Ich werde Ihnen dieses Problem anhand der Checkout Klasse aufzeigen, da dieses gleiche Problem in beiden Klassen aufgetreten ist.
+Hier ist der startzustand, welcher dieses Problem hatte.
+
+\begin{minted}{java}
+public class Session extends ERXSession {
+	private Kunde kunde = null;
+	private Bestellung bestellung;
+
+	/** getter/setter **/
+
+}
+
+public class PCheckOut extends BaseComponent {
+	public PCheckOut(WOContext context) {
+		super(context);
+		 // check ob wir schon kunden und 
+		 // bestellungs objekte erstellt haben
+		if(session().getKunde() == null) {
+			kunde = 
+			ERXEOControlUtilities.createAndInsertObject(
+				session().defaultEditingContext(),
+				Kunde.class);
+			bestellung = 
+			ERXEOControlUtilities.createAndInsertObject(
+				session().defaultEditingContext(),
+				Bestellung.class);
+		} else {
+			kunde = session().getKunde();
+			bestellung = session().getBestellung();
+		}
+	}
+
+	public final WOComponent submit() {
+		kunde.setKundeSeit(new NSTimestamp());
+		bestellung.setDatum(new NSTimestamp());
+		// speichere die finalen kunden
+		// und bestellungs daten
+		bestellung.setKundenRelationship(kunde);
+		// session kunde/ bestellung setzen
+		// falls der kunde etwas falsch eingegeben 
+		// hat nehmen wir die aus der session
+		session().setKunde(kunde);
+		session().setBestellung(bestellung);
+		return pageWithName(PKontrolle.class);
+	}
+
+	public final WOComponent back() {
+		return pageWithName(Main.class);
+	}
+
+	/** getter/setter **/
+
+}
+\end{minted}
+
 Die daten welche beim ersten mal erstellt worden sind, diese sind eingetragen worden.
 Da diese noch inkomplett waren gab es den Error.
 Ich musste also die user Daten bei einem abbruch löschen.
+
+\begin{minted}{java}
+public class Session extends ERXSession {
+	/** getter/setter **/
+
+}
+
+public class PCheckOut extends BaseComponent {
+	public PCheckOut(WOContext context) {
+		super(context);
+		// check ob wir schon kunden und 
+		// bestellungs objekte erstellt haben
+		kunde =
+		ERXEOControlUtilities.createAndInsertObject(
+			session().defaultEditingContext(), 
+			Kunde.class);
+		bestellung = 
+		ERXEOControlUtilities.createAndInsertObject(
+			session().defaultEditingContext(), 
+			Bestellung.class);
+	}
+
+	public final WOComponent submit() {
+		PKontrolle kontrolle = pageWithName(PKontrolle.class);
+		// speichere die finalen kunden
+		// und bestellungs daten
+		bestellung.setKundenRelationship(kunde);
+		// session kunde/ bestellung setzen
+		// falls der kunde etwas falsch eingegeben 
+		// hat nehmen wir die aus der session
+		kontrolle.setKunde(kunde);
+		kontrolle.setBestellung(bestellung);
+		return kontrolle;
+	}
+
+	public final WOComponent back() {
+		kunde.delete();
+		bestellung.delete();
+		return pageWithName(Main.class);
+	}
+
+	/** getter/setter **/
+
+}
+\end{minted}
 
 \section{Projektergebnisse}
 
@@ -620,18 +720,4 @@ Dokumentation schreiben & 15:55- \\
 
 \end{drama}
 
-\begin{minted}{java}
-	private Artikel artikel;
-	/**
-	* Der inhalt in der jetzigen Iteration
-	*/
-	private Inhalt inhaltLoopVar;
-	
-	/**
-	 * Die Inhalte welche auf der Seite ausgewählt worden
-	 * sind, sind in diesem array drin, bei der submit Methode
-	 * 
-	 */
-	private NSMutableArray<Inhalt> inhalteSelections;
-	\end{minted}
 \end{document}

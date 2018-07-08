@@ -12,5 +12,6 @@ tex2pdf*
 *.toc
 *.fdb_latexmk
 *.synctex.gz
+*.synctex
 _minted*
 *.out
