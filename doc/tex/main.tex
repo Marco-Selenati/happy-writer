@@ -58,7 +58,7 @@ linenos
 % dokument informationen/title
 \title{Dokumentation Projektarbeit `HappyWriter'}
 \author{Marco Selenati\\
-	IFZ-624-002\\
+	IFZ--624--002\\
 	Stiftung Wirtschaftsinformatikschule Schweiz,\\
 	Hohlstrasse 535,\\
 	Zürich,\\
@@ -101,7 +101,7 @@ Dieser Webshop eröffnet dem Unternehmen einen neuen Verkaufskanal.
 
 \section{Anforderungen}
 
-Die Projektanforderungen, welche aus den Aufgabeblätter\cite{Aufgabeblaetter} sind, sind wie folgt.
+Die Projektanforderungen, welche aus den Aufgabeblätter\cite{Aufgabenblaetter} sind, sind wie folgt.
 
 \begin{easylist}[itemize]
 	& Project Wonder
@@ -116,6 +116,8 @@ Die Projektanforderungen, welche aus den Aufgabeblätter\cite{Aufgabeblaetter} s
 \section{Projektdurchführung}
 
 \subsection{Planung}
+
+Mein Plan für was ich in welcher reihenfolge machen will.
 
 \begin{easylist}
 	& Erstellen des Konzeptes
@@ -147,15 +149,60 @@ Die Projektanforderungen, welche aus den Aufgabeblätter\cite{Aufgabeblaetter} s
 
 Ich hatte Probleme, welche interessant waren und stelle Ihnen ein paar davon vor.
 
-\subsubsection{Inhalte anzeigen}
-
 \subsubsection{Checkbox array}
+
+\paragraph{Problem beschreibung}
+
+Ich wusste nicht wie ich ein Dynamisches Checkbox array erstellen kann.
+
+\paragraph{Lösungsweg}
+
+Herr Standhart hat mich darauf hingewiesen, dass es ein CheckboxMatrix gibt.
+Ich habe nachher probiert dieses einzusetzen auf meiner Seite.
+Dabei war alles klar ausser selections ich dachte dieses Attribut sei ein array mit Booleans welche Objekte selektiert worden waren, war es aber nicht.
+Ich habe nachher in der WOnder dokumentation nachgelesen dass es ein Array mit den ausgewählten Objekten zurück gibt.
+Wo ich es dann ausprobiert habe ging es.
 
 \subsubsection{Validation}
 
+\paragraph{Problem beschreibung}
+
+Der Benutzer kann ausversehen invalide daten eingeben und der Server zeigt einen Error an.
+
+\paragraph{Lösungsweg}
+
+Ich habe Parsley und HTML5 input attribute benutzt.
+Nach einigem Testen konnte ich keine Error mehr hervorrufen.
+Natürlich ist dies kein schutz vor böswilligen Angriffen da diese die Validierung umgehen können.
+Diese werden dann einen Error von WOnder sehen, aber WOnder speichert keine invaliden Daten in die Datenbank.
+
 \subsubsection{Component Component variablen}
 
+\paragraph{Problem beschreibung}
+
+Ich wollte ein ComponentComponent erstellen welcher die grundstruktur der HTML Seite beinhaltet.
+Für den Body kann ich ComponentContent verwenden, jedoch wie kann ich den Titel variabel halten?
+
+\paragraph{Lösungsweg}
+
+Ich habe zuerst den Titel einfach in die Session gespeichert.
+Dann habe ich gemerkt dass wenn ich den Titel in einer Seite nicht setze wird der welcher auf der letzten Seite gesetz worden war genommen, da der immernoch in der Session ist.
+Ich dachte, dass es eine bessere lösung muss geben so lass ich im Buch\cite{Learning_the_Wonders}.
+Da steht auf Seite 131, dass ich einfach ein attribut bei dem ComponentComponent machen kann und dieses verwenden kann.
+
 \subsubsection{Formular abbruch}
+
+\paragraph{Problem beschreibung}
+
+Wenn ich abgebrochen habe die user Daten einzufüllen und nachher sie eingefüllt und abgeschickt habe gab es einen Error.
+
+\paragraph{Lösungsweg}
+
+Dieser Error kommt weil ich probiere invalide daten einzugeben.
+Die daten die ich von dem user eintragen will sind gültig.
+Die daten welche beim ersten mal erstellt worden sind, diese sind eingetragen worden.
+Da diese noch inkomplett waren gab es den Error.
+Ich musste also die user Daten bei einem abbruch löschen.
 
 \section{Projektergebnisse}
 
@@ -291,7 +338,7 @@ Ich lasse mir den Inhalt der Tabelle Inhalte ausgeben.
 
 \subparagraph{Erfolg}
 
-der soeben erstellte Datensatz ist in der Tabelle eingetragen.
+Der soeben erstellte Datensatz ist in der Tabelle eingetragen.
 
 \paragraph{Kundendaten Kontrolle zurück und abschicken}
 
@@ -313,7 +360,7 @@ Ich drücke Bestätigen.
 
 \subparagraph{Erfolg}
 
-der soeben erstellte Datensatz ist in der Tabelle eingetragen.
+Der soeben erstellte Datensatz ist in der Tabelle eingetragen.
 
 
 % Die Ordnerstruktur sollte nicht unterbrochen werden,
@@ -360,7 +407,7 @@ Ich muss beim nächsten Projekt die Transactions mehr im Kopf haben. Ich habe im
 
 \addcontentsline{toc}{section}{Literatur}
 \begin{thebibliography}{9}
-\bibitem{Aufgabeblaetter}
+\bibitem{Aufgabenblaetter}
 Leistungsbeurteilung Projektarbeit
 Datenbanken in Web-Auftritt einbinden (151)
 Dokumentnachweis: B14-151\_LB-Projektarbeit\_Aufgabenstellung\_18-06\_V004.docx
@@ -479,7 +526,7 @@ Dokumentation schreiben/ Über Dokumentieren lesen & 18:00-24:00 \\
 \toprule
 Beschreibung & Zeit \\
 \midrule
-Dokumentation schreiben/ Über Sokumentieren lesen & 00:00-01:00 \\
+Dokumentation schreiben/ Über Dokumentieren lesen & 00:00-01:00 \\
 Arbeiten an der Dokumentation & 10:00-23:25 \\
 \bottomrule
 \end{tabular}
@@ -493,6 +540,7 @@ Beschreibung & Zeit \\
 JavaDoc schreiben & 12:30-13:00 \\
  & 14:00-14:10 \\
  & 14:30-15:00\\
+Dokumentation schreiben & 15:55- \\
 \bottomrule
 \end{tabular}
 
