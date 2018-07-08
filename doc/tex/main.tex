@@ -18,7 +18,7 @@
 \usepackage{tabularx}
 \usepackage{booktabs}
 \usepackage{longtable}
-% plant uml diagramme
+% plant uml Diagramme
 \usepackage{plantuml}
 % Sprachunterstützung
 \usepackage[nswissgerman]{babel}
@@ -197,7 +197,7 @@ Inhalt ||--o{ BestellteKonfiguration
 
 \subsection{Planung}
 
-Mein Plan für was ich in welcher reihenfolge machen will.
+Mein Plan, was ich in welcher Reihenfolge machen will.
 
 \begin{easylist}
 	& Erstellen des Konzeptes
@@ -233,55 +233,55 @@ Ich hatte Probleme, welche interessant waren und stelle Ihnen ein paar davon vor
 
 \paragraph{Problem beschreibung}
 
-Ich wusste nicht wie ich ein Dynamisches Checkbox array erstellen kann.
+Ich wusste nicht, wie ich ein Dynamisches Checkbox array erstellen kann.
 
 \paragraph{Lösungsweg}
 
 Herr Standhart hat mich darauf hingewiesen, dass es ein CheckboxMatrix gibt.
-Ich habe nachher probiert dieses einzusetzen auf meiner Seite.
-Dabei war alles klar ausser selections ich dachte dieses Attribut sei ein array mit Booleans welche Objekte selektiert worden waren, war es aber nicht.
-Ich habe nachher in der WOnder dokumentation nachgelesen dass es ein Array mit den ausgewählten Objekten zurück gibt.
-Wo ich es dann ausprobiert habe ging es.
+Ich habe danach probiert dieses auf meiner Seite einzusetzen.
+Dabei war alles klar ausser selections. Ich dachte, dieses Attribut sei ein Array aus Booleans welches mir sagt, welche Objekte selektiert worden waren, war es aber nicht.
+Ich habe nachher in der WOnder Dokumentation nachgelesen, dass es ein Array mit den ausgewählten Objekten zurückgibt.
+Als ich es dann ausprobierte, funktionierte es.
 
 \subsubsection{Validation}
 
 \paragraph{Problem beschreibung}
 
-Der Benutzer kann ausversehen invalide daten eingeben und der Server zeigt einen Error an.
+Der Benutzer kann aus Versehen ungültige Daten eingeben und der Server zeigt einen Error an.
 
 \paragraph{Lösungsweg}
 
 Ich habe Parsley und HTML5 input attribute benutzt.
 Nach einigem Testen konnte ich keine Error mehr hervorrufen.
-Natürlich ist dies kein schutz vor böswilligen Angriffen da diese die Validierung umgehen können.
+Natürlich ist dies kein Schutz vor böswilligen Angriffen, da diese die Validierung umgehen können.
 Diese werden dann einen Error von WOnder sehen, aber WOnder speichert keine invaliden Daten in die Datenbank.
 
 \subsubsection{Component Component variablen}
 
 \paragraph{Problem beschreibung}
 
-Ich wollte ein ComponentComponent erstellen welcher die grundstruktur der HTML Seite beinhaltet.
+Ich wollte ein ComponentComponent erstellen welcher die Grundstruktur der HTML Seite beinhaltet.
 Für den Body kann ich ComponentContent verwenden, jedoch wie kann ich den Titel variabel halten?
 
 \paragraph{Lösungsweg}
 
 Ich habe zuerst den Titel einfach in die Session gespeichert.
-Dann habe ich gemerkt dass wenn ich den Titel in einer Seite nicht setze wird der welcher auf der letzten Seite gesetz worden war genommen, da der immernoch in der Session ist.
-Ich dachte, dass es eine bessere lösung muss geben so lass ich im Buch\cite{Learning_the_Wonders}.
-Da steht auf Seite 131, dass ich einfach ein attribut bei dem ComponentComponent machen kann und dieses verwenden kann.
+Dann habe ich gemerkt, wenn ich den Titel in einer Seite nicht setze, wird derjenige genommen, welcher auf der letzten Seite gesetzt worden war, da dieser immer noch in der Session ist.
+Ich dachte, dass es eine bessere Lösung geben muss. So lass ich im Buch\cite{Learning_the_Wonders}.
+Da steht auf Seite 131, dass ich einfach ein Attribut bei dem ComponentComponent machen und dieses verwenden kann.
 
 \subsubsection{Formular abbruch}
 
 \paragraph{Problem beschreibung}
 
-Wenn ich abgebrochen habe die user Daten einzufüllen und nachher sie eingefüllt und abgeschickt habe gab es einen Error.
+Wenn ich abbrach, die User Daten einzufüllen und sie nachher eingefüllt und abgeschickt hatte, gab es einen Error.
 
 \paragraph{Lösungsweg}
 
-Dieser Error kommt weil ich probiere invalide daten einzugeben.
-Die daten die ich von dem user eintragen will sind gültig.
+Dieser Error kommt, weil ich probiere, invalide Daten einzugeben.
+Die Daten, die ich vom User eintragen will, sind gültig.
 Ich werde Ihnen dieses Problem anhand der Checkout Klasse aufzeigen, da dieses gleiche Problem in beiden Klassen aufgetreten ist.
-Hier ist der startzustand, welcher dieses Problem hatte.
+Hier ist der Startzustand, welcher dieses Problem hatte.
 
 \begin{minted}{java}
 public class Session extends ERXSession {
@@ -335,9 +335,9 @@ public class PCheckOut extends BaseComponent {
 }
 \end{minted}
 
-Die daten welche beim ersten mal erstellt worden sind, diese sind eingetragen worden.
-Da diese noch inkomplett waren gab es den Error.
-Ich musste also die user Daten bei einem abbruch löschen.
+Die Daten, welche beim ersten Mal erstellt wurden, sind eingetragen worden.
+Da diese noch inkomplett waren, gab es den Error.
+Ich musste also die User Daten bei einem Abbruch löschen.
 
 \begin{minted}{java}
 public class Session extends ERXSession {
@@ -726,6 +726,7 @@ EOModel Fixen & 19:10--19:55 \\
 UX verbessern & 19:55--20:40 \\
 Dokumentation verbessern & 21:00--21:57 \\
 Dokumentieren & 22:12--22:48 \\
+Dokumentation verbessern & 22:48--23:20 \\
 \bottomrule
 \end{tabular}
 
@@ -739,7 +740,7 @@ Dokumentieren & 22:12--22:48 \\
 	\Character{Frau Fusco}{fusco}
 	\Character{Herr Standhart}{standhard}
 
-\msspeaks: Kann ich die Dokumentation solange sie am Schluss PDF ist aus allem generieren lassen, was ich will?
+\msspeaks: Kann ich die Dokumentation, solange sie am Schluss PDF ist, aus allem was ich will generieren lassen?
 
 \dozentspeaks: Ja, Sie können es aus Markdown Word oder sogar aus einem selbst geschriebenen Tool generieren lassen, wenn Sie wollen.
 
@@ -800,7 +801,7 @@ Dokumentieren & 22:12--22:48 \\
 \msspeaks: Wollen Sie sich meine Applikation ansehen?
 
 \fuscospeaks: Ja
-    Artikel und Inhalt sind verwirrend. da Inhalte auch Artikel sind. Inhaltsartikel anstatt Inhalt.
+    Artikel und Inhalt sind verwirrend, da Inhalte auch Artikel sind. Inhaltsartikel anstatt Inhalt.
     Admin Login sollte auf den CMS Seiten nicht angezeigt werden.
 
 \end{drama}
