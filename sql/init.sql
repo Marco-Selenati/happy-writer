@@ -4,7 +4,7 @@ CREATE TABLE BestellPosition (artikel_id INT NOT NULL, bestellung_id INT NOT NUL
 
 CREATE TABLE BestellteKonfiguration (bestellPos_id INT NOT NULL, inhalt_id INT NOT NULL);
 
-CREATE TABLE Bestellung (bemerkungen VARCHAR(255) NULL, datum DATE NOT NULL, id INT NOT NULL, kunde_id INT NOT NULL);
+CREATE TABLE Bestellung (bemerkungen VARCHAR(255) NOT NULL, datum DATE NOT NULL, id INT NOT NULL, kunde_id INT NOT NULL);
 
 CREATE TABLE Inhalt (id INT NOT NULL, name VARCHAR(50) NOT NULL, preis DECIMAL(38,4) NOT NULL);
 

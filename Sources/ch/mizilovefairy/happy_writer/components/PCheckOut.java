@@ -45,8 +45,6 @@ public class PCheckOut extends BaseComponent {
 	 */
 	public final WOComponent submit() {
 		PKontrolle kontrolle = pageWithName(PKontrolle.class);
-		// speichere die finalen kunden und bestellungs daten
-		bestellung.setKundenRelationship(kunde);
 		// session kunde/ bestellung setzen
 		// falls der kunde etwas falsch eingegeben hat nehmen wir die aus der session
 		kontrolle.setKunde(kunde);

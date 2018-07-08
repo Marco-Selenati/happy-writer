@@ -45,7 +45,8 @@ public class PKontrolle extends BaseComponent {
 		System.out.println("new" + now);
 		kunde.setKundeSeit(now);
 		bestellung.setDatum(now);
-		System.out.println("datum" + bestellung.datum());
+		// speichere die finalen kunden und bestellungs daten
+		bestellung.setKundenRelationship(kunde);
 		session().defaultEditingContext().saveChanges();
 		return pageWithName(PDanke.class);
 	}

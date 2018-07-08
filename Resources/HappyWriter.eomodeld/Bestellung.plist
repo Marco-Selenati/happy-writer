@@ -1,7 +1,7 @@
 {
     attributes = (
         {
-            allowsNull = Y; 
+            allowsNull = N; 
             columnName = bemerkungen; 
             name = bemerkungen; 
             prototypeName = varchar255; 

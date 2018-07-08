@@ -171,9 +171,11 @@ public abstract class _Bestellung extends  ERXGenericRecord {
   }
 
 
-  public static Bestellung createBestellung(EOEditingContext editingContext, NSTimestamp datum
+  public static Bestellung createBestellung(EOEditingContext editingContext, String bemerkungen
+, NSTimestamp datum
 , ch.mizilovefairy.happy_writer.db.Kunde kunden) {
     Bestellung eo = (Bestellung) EOUtilities.createAndInsertInstance(editingContext, _Bestellung.ENTITY_NAME);
+    eo.setBemerkungen(bemerkungen);
     eo.setDatum(datum);
     eo.setKundenRelationship(kunden);
     return eo;
