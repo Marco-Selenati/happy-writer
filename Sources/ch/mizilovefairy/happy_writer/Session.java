@@ -7,8 +7,24 @@ import ch.mizilovefairy.happy_writer.db.BestellPosition;
 import ch.mizilovefairy.happy_writer.db.Inhalt;
 import er.extensions.appserver.ERXSession;
 
+/**
+ * Die OO repräsentation einer Session.
+ * 
+ * Hier können wir unsere Applikations spezifische session Methoden
+ * reinschreiben.
+ * 
+ * @author Marco Selenati
+ *
+ */
 public class Session extends ERXSession {
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 5874995826373810920L;
+	/**
+	 * Der Warenkorb des Benutzers.
+	 * 
+	 * Hier werden die Artikel und die Inhaltsartikel gespeicher die der Benutzer
+	 * kaufen will.
+	 * 
+	 */
 	private NSMutableArray<BestellPosition> warenkorb = new NSMutableArray<>();
 	/**
 	 * Dieses Array speichert den vom Admin bearbeiteten zustand des Inhalte tables
@@ -19,6 +35,9 @@ public class Session extends ERXSession {
 	 */
 	private NSMutableArray<Artikel> artikel;
 
+	/**
+	 * Wir wollen die session id in den cookies.
+	 */
 	public Session() {
 		setStoresIDsInURLs(false);
 		setStoresIDsInCookies(true);

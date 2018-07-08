@@ -55,6 +55,11 @@ public class PArtikel extends BaseComponent {
 		return pageWithName(Main.class);
 	}
 
+	/**
+	 * Verlinkt zur Hauptseite.
+	 * 
+	 * @return Die Hauptseite.
+	 */
 	public final WOComponent back() {
 		return pageWithName(Main.class);
 	}

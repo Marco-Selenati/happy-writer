@@ -9,15 +9,33 @@ import ch.mizilovefairy.happy_writer.db.BestellPosition;
 import ch.mizilovefairy.happy_writer.db.Bestellung;
 import ch.mizilovefairy.happy_writer.db.Kunde;
 
+/**
+ * Hier kann der User seine Daten kontrollieren.
+ * 
+ * @author Marco Selenati
+ *
+ */
 public class PKontrolle extends BaseComponent {
 	private static final long serialVersionUID = 999080953184221504L;
+	/**
+	 * Das Kunde Model welches wir mit den Daten füllen.
+	 */
 	private Kunde kunde;
+	/**
+	 * Das Bestellungs Model welches wir mit den Daten füllen.
+	 */
 	private Bestellung bestellung;
 
 	public PKontrolle(WOContext context) {
 		super(context);
 	}
 
+	/**
+	 * Hier werden die Daten noch fertig ausgefüllt und nacher wird alles auf die
+	 * Datenbank geschrieben.
+	 * 
+	 * @return Die Dankes Seite.
+	 */
 	public final WOComponent commit() {
 		// verbinde bestellung mit den waren im warenkorb
 		NSMutableArray<BestellPosition> warenkorb = session().getWarenkorb();
@@ -32,6 +50,15 @@ public class PKontrolle extends BaseComponent {
 		return pageWithName(PDanke.class);
 	}
 
+	/**
+	 * Hier gehen wir eine Seite zurück.
+	 * 
+	 * Wichtig ist hier das wir die datenbank einträge wieder raus nehmen. Weil die
+	 * datenbank einträge weiterhin bestehen würden mit ungültigen daten. Wenn dann
+	 * ein saveChanges kommt gibt es einen Error.
+	 * 
+	 * @return Die Hauptseite.
+	 */
 	public final WOComponent back() {
 		kunde.delete();
 		bestellung.delete();

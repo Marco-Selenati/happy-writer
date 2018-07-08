@@ -9,6 +9,11 @@ public class Inhalt extends _Inhalt {
 	@SuppressWarnings("unused")
 	private static final Logger log = LoggerFactory.getLogger(Inhalt.class);
 
+	/**
+	 * Generiert die icon lokation aus dem namen.
+	 * 
+	 * @return Die icon lokation.
+	 */
 	public final String icon() {
 		return "assets/inhalt/" + name() + ".jpg";
 	}

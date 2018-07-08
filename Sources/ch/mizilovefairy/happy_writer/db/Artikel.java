@@ -8,7 +8,12 @@ public class Artikel extends _Artikel {
 
 	@SuppressWarnings("unused")
 	private static final Logger log = LoggerFactory.getLogger(Artikel.class);
-	
+
+	/**
+	 * Generiert den Icon lokation aus der bezeichnung.
+	 * 
+	 * @return Die icon lokation.
+	 */
 	public final String icon() {
 		return "assets/artikel/" + bezeichnung() + ".jpg";
 	}
