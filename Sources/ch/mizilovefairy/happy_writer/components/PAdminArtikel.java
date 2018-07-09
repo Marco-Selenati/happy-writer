@@ -51,7 +51,14 @@ public class PAdminArtikel extends BaseComponent {
 	 * @return Die jetzige Seite.
 	 */
 	public final WOComponent commit() {
-		session().defaultEditingContext().saveChanges();
+		try {
+			session().defaultEditingContext().saveChanges();
+		} catch(Error | Exception e) {
+			// es ist etwas falschgelaufen wir brechen ab
+			// wir zeigen nun dem nutzer unsere eigene error seite
+			session().terminate();
+			return pageWithName(PError.class);
+		}
 		init();
 		return null;
 	}

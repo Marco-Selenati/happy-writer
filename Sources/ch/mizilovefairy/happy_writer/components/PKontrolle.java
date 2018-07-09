@@ -47,7 +47,14 @@ public class PKontrolle extends BaseComponent {
 		bestellung.setDatum(now);
 		// speichere die finalen kunden und bestellungs daten
 		bestellung.setKundenRelationship(kunde);
-		session().defaultEditingContext().saveChanges();
+		try {
+			session().defaultEditingContext().saveChanges();
+		} catch(Error | Exception e) {
+			// es ist etwas falschgelaufen wir brechen ab
+			// wir zeigen nun dem nutzer unsere eigene error seite
+			session().terminate();
+			return pageWithName(PError.class);
+		}
 		return pageWithName(PDanke.class);
 	}
 
