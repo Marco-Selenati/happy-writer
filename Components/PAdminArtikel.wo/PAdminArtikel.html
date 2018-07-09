@@ -1,52 +1,54 @@
 <webobject name = "wrapper">
-  <h1>Artikel &quot;<webobject name = "artikelBezeichnung" />&quot; Inhalte verwalten</h1>
-  <h3>Verf&uuml;gbar f&uuml;r diesen Artikel</h3>
-  <table class = "table table-hover">
-    <thead>
-      <tr>
-        <th class = "w-25">Name</th>
-        <th class = "w-25">Preis</th>
-        <th class = "w-25">Aktionen</th>
-      </tr>
-    </thead>
-    <tbody>
-      <webobject name = "inhalte">
+  <div class = "container-fluid">
+    <h1>Artikel &quot;<webobject name = "artikelBezeichnung" />&quot; Inhalte verwalten</h1>
+    <h3>Verf&uuml;gbar f&uuml;r diesen Artikel</h3>
+    <table class = "table table-hover">
+      <thead>
         <tr>
-          <td><webobject name = "inhaltName" /></td>
-          <td><webobject name = "inhaltPreis" /></td>
-          <td>
-            <webobject name = "removeInhaltFromArtikel">
-              <span class = "fas fa-minus"></span>
-            </webobject>
-          </td>
+          <th class = "w-25">Name</th>
+          <th class = "w-25">Preis</th>
+          <th class = "w-25">Aktionen</th>
         </tr>
-      </webobject>
-    </tbody>
-  </table>
-  <h3>Nicht verf&uuml;gbar f&uuml;r diesen Artikel</h3>
-  <table class = "table table-hover">
-    <thead>
-      <tr>
-        <th class = "w-25">Name</th>
-        <th class = "w-25">Preis</th>
-        <th class = "w-25">Aktionen</th>
-      </tr>
-    </thead>
-    <tbody>
-      <webobject name = "inhalteNichtInArtikel">
+      </thead>
+      <tbody>
+        <webobject name = "inhalte">
+          <tr>
+            <td><webobject name = "inhaltName" /></td>
+            <td><webobject name = "inhaltPreis" /></td>
+            <td>
+              <webobject name = "removeInhaltFromArtikel">
+                <span class = "fas fa-minus"></span>
+              </webobject>
+            </td>
+          </tr>
+        </webobject>
+      </tbody>
+    </table>
+    <h3>Nicht verf&uuml;gbar f&uuml;r diesen Artikel</h3>
+    <table class = "table table-hover">
+      <thead>
         <tr>
-          <td><webobject name = "inhaltName" /></td>
-          <td><webobject name = "inhaltPreis" /></td>
-          <td>
-            <webobject name = "addInhaltToArticle">
-              <span class = "fas fa-plus"></span>
-            </webobject>
-          </td>
+          <th class = "w-25">Name</th>
+          <th class = "w-25">Preis</th>
+          <th class = "w-25">Aktionen</th>
         </tr>
-      </webobject>
-    </tbody>
-  </table>
-  <webobject name = "back">Zur&uuml;ck</webobject>
-  <webobject name = "commit">Speichern</webobject>
-  <webobject name = "abort">Letzten gespeicherten Zustand herstellen</webobject>
+      </thead>
+      <tbody>
+        <webobject name = "inhalteNichtInArtikel">
+          <tr>
+            <td><webobject name = "inhaltName" /></td>
+            <td><webobject name = "inhaltPreis" /></td>
+            <td>
+              <webobject name = "addInhaltToArticle">
+                <span class = "fas fa-plus"></span>
+              </webobject>
+            </td>
+          </tr>
+        </webobject>
+      </tbody>
+    </table>
+    <webobject name = "back">Zur&uuml;ck</webobject>
+    <webobject name = "commit">Speichern</webobject>
+    <webobject name = "abort">Letzten gespeicherten Zustand herstellen</webobject>
+  </div>
 </webobject>
