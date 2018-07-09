@@ -47,7 +47,7 @@ public class PAdminInhalt extends BaseComponent {
 	public final WOComponent commit() {
 		try {
 			session().defaultEditingContext().saveChanges();
-		} catch(Error | Exception e) {
+		} catch (Error | Exception e) {
 			// es ist etwas falschgelaufen wir brechen ab
 			// wir zeigen nun dem nutzer unsere eigene error seite
 			session().terminate();

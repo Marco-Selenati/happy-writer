@@ -33,7 +33,6 @@ public class BaseLayout extends BaseComponent {
 		return pageWithName(Main.class);
 	}
 
-
 	/**
 	 * Verlinkt zur Adminloginseite.
 	 * 
