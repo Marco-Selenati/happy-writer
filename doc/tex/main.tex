@@ -18,12 +18,9 @@
 \usepackage{tabularx}
 \usepackage{booktabs}
 \usepackage{longtable}
-% plant uml Diagramme
-\usepackage{plantuml}
+\usepackage{graphicx}
 % Sprachunterstützung
 \usepackage[nswissgerman]{babel}
-% schönere Font
-\usepackage{unicode-math}
 % hier setzen wir die Font welche bei den Codeauflistungen verwendet werden soll
 \setmonofont[
   Contextuals={Alternate}
@@ -117,81 +114,12 @@ Die Projektanforderungen, welche aus den Aufgabeblätter\cite{Aufgabenblaetter} 
 	& An jeder Stelle des Vorganges soll ein Abbruch möglich sein
 \end{easylist}
 
-Das vorgegebene ERD.
-
-\begin{plantuml}
-@startuml
-
-hide circle
-hide empty members
-
-entity Kunde {
-   id
-   --
-   vorname
-   nachname
-   strasse
-   ort
-   plz
-   tel
-   kundeSeit
-}
-
-entity Bestellung {
-   id
-   --
-   kunde_id
-   datum
-   bemerkungen
-}
-
-entity BestellPosition {
-   id
-   --
-   artikel_id
-   bestell_id
-}
-
-entity Artikel {
-   id
-   --
-   bezeichnung
-   preis
-}
-
-entity Inhalt {
-   id
-   --
-   name
-   preis
-}
-
-entity Konfiguration {
-   artikel_id
-   inhalt_id
-   --
-}
-
-entity BestellteKonfiguration {
-   bestellPos_id
-   inhalt_id
-   --
-}
-
-Kunde ||--|{ Bestellung
-
-Bestellung ||--|{ BestellPosition
-
-BestellPosition }o--|| Artikel
-BestellPosition ||--o{ BestellteKonfiguration
-
-Artikel ||--o{ Konfiguration
-
-Inhalt ||--o{ Konfiguration
-Inhalt ||--o{ BestellteKonfiguration
-
-@enduml
-\end{plantuml}
+\begin{figure}
+\caption{Das vorgegebene ERD.}
+\centering
+\includegraphics[height=20cm]{erd.png}
+\end{figure}
+\clearpage
 
 \section{Projektdurchführung}
 
@@ -585,6 +513,10 @@ Die Arbeit an diesem Projekt war sehr interessant. Ich konnte erleben, wie einfa
 
 Ich muss beim nächsten Projekt die Transactions mehr im Kopf haben. Ich habe immer wieder vergessen, dass in der Datenbank erstellte Objekte, auch wenn nicht auf sie referenziert wird, bei dem nächsten saveChanges mit gespeichert werden.
 
+\addcontentsline{toc}{section}{Abbildungsverzeichnis}
+
+\listoffigures
+
 \addcontentsline{toc}{section}{Literatur}
 \begin{thebibliography}{9}
 \bibitem{Aufgabenblaetter}
@@ -730,6 +662,16 @@ Dokumentation verbessern & 22:48--23:20 \\
 \bottomrule
 \end{tabular}
 
+\subsubsection{9 Juli 2018}
+
+\begin{tabular}{llr}
+\toprule
+Beschreibung & Zeit \\
+\midrule
+Dokumentation verbessern & 8:00--9:05 \\
+\bottomrule
+\end{tabular}
+
 \subsection{Informationsbeschaffung}
 
 \begin{drama}
@@ -738,7 +680,7 @@ Dokumentation verbessern & 22:48--23:20 \\
 	\Character{Internet}{internet}
 	\Character{Herr Bärlocher}{lucas}
 	\Character{Frau Fusco}{fusco}
-	\Character{Herr Standhart}{standhard}
+	\Character{Herr Standhardt}{standhard}
 
 \msspeaks: Kann ich die Dokumentation, solange sie am Schluss PDF ist, aus allem was ich will generieren lassen?
 
