@@ -28,7 +28,11 @@ Dependencies um die Dokumentation zu generieren:
 
 ### Installation
 
-Als erstes werden wir die Datenbank einrichten. Zuerst erstellen Sie eine neue Datenbank mit dem Namen "HappyWriter". In dieser Datenbank führen Sie das Skript "/sql/init.sql" aus und danach "/sql/seed.sql". Im ersten Skript erstellen wir die benötigten Strukturen, im nächsten füllen wir diese mit den Testdaten.
+Als erstes werden wir die Datenbank einrichten. Zuerst erstellen Sie eine neue Datenbank mit dem Namen "HappyWriter".
+
+CREATE DATABASE HappyWriter COLLATE utf8mb4_bin;
+
+In dieser Datenbank führen Sie das Skript "/sql/init.sql" aus und danach "/sql/seed.sql". Im ersten Skript erstellen wir die benötigten Strukturen, im nächsten füllen wir diese mit den Testdaten.
 
 Jetzt importieren wir das Projekt in unsere WOnder Eclipse Umgebung. Gehen Sie in Ihr Eclipse und gehen Sie auf File -> Import Existing Projects into Workspace. Root directory ist der root Ordner dieses Projektes, der Ordner in welchem das README.md ist. Ich empfehle, die Option Copy projects into Workspace nicht zu setzen. Nun sollten Sie ein funktionierendes WOnder Projekt haben.
 
